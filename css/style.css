@@ -382,14 +382,14 @@ h3 {
 /* or 167% */
 	letter-spacing: 0.02em;
 	color: #5168E4;
-	font-weight: 900;
+	font-weight: 700;
 }
 .sf-gov .mission .sub-title{
 	font-size: 22px;
 	line-height: 40px;
 	letter-spacing: 0.02em;
 	/* color: #5168E4; */
-	font-weight: 900;
+	font-weight: 600;
 	margin-bottom: 8px;
 }
 .sf-gov .mission p{
@@ -415,7 +415,7 @@ h3 {
 	line-height: 21px;
 	color: #1C3E57;
 	margin-bottom: 10px;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .sf-gov .item .title em {
@@ -454,6 +454,7 @@ section.border {
 	line-height: 35px;/* or 219% */
 	letter-spacing: 0.02em;
 	padding: 36px 170px;
+	/* font-weight: 300; */
 }
 
 .sf-gov .info {
@@ -516,7 +517,7 @@ section.border {
 
 .sf-gov .problem-solution .header {
 	display: inline-block;	/* padding: 30px; */
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 24px;
 	line-height: 29px;/* identical to box height, or 121% */
 	letter-spacing: 0.04em;
@@ -561,7 +562,9 @@ h3 {}
 .sf-gov .typography div:nth-child(3) .body {font-weight: 600;}
 .sf-gov .typography div:nth-child(4) .body {font-weight: 600;}
 .sf-gov .typography div:nth-child(5) .body {font-weight: 600;}
-.sf-gov .typography div:nth-child(6) .body {}
+.sf-gov .typography div:nth-child(6) .body {
+    font-weight: 500;
+}
 .sf-gov .typography div:nth-child(7) .body {font-weight: 600;}
 
 .sf-gov .colors .color-swatch {
@@ -577,4 +580,9 @@ h3 {}
 	font-size: 16px;
 	line-height: 20px;/* or 125% */
 	letter-spacing: 0.02em;
+}
+
+.sf-gov p.conclusion {
+    font-weight: 300;
+    font-size: 18px;
 }
