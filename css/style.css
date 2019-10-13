@@ -81,12 +81,26 @@ h4 {
 .billboard {
 	margin: 0;
 	height: 480px;
-	background-color: #e0e0e0;
-	text-align: center;
 	font-family: Rajdhani, sans-serif;
-	text-transform: uppercase;
+	min-height: 0;
+	border-bottom: 2px solid #efefef;
+	padding: 80px 0;
+	box-sizing: border-box;
+}
+
+.billboard .title {
 	font-size: 48px;
-	line-height: 480px;
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+.billboard .sub-title {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.billboard .quote {
+	font-size: 20px;
 }
 
 h2 {
@@ -102,10 +116,6 @@ h2 {
 }
 
 hr {
-
-	/* border-color: #efefef; */
-
-	/* color: #efefef; */
 	border: 1px solid #efefef;
 }
 
@@ -144,11 +154,7 @@ h3 {
 }
 
 .mood-mod {
-
-	/* display: none; */color: #4F4F4F;
-}
-
-.mood-mod .logic {
+	color: #4F4F4F;
 }
 
 .mood-mod .gallery {
@@ -171,17 +177,13 @@ h3 {
 .mood-mod .gallery.sketches .image {
 	width: 25%;
 	height: 286px;
-	background-size: 53%;/* background-position: -14px 5px; */
-
-	/* border: 1px solid red; */
+	background-size: 53%;
 }
 
 .mood-mod .gallery.prototype .image {
 	width: 20%;
 	height: 345px;
-	background-size: 70%;/* background-position: -14px 5px; */
-
-	/* border: 1px solid red; */
+	background-size: 70%;
 }
 
 .mood-mod .logic p {
@@ -263,7 +265,6 @@ h3 {
 }
 
 .project-container > .logo {
-	background-image: url(../img/hero_imgFull.jpg);
 	height: 480px;
 	background-position: center;
 	background-size: cover;
@@ -275,7 +276,41 @@ h3 {
 }
 
 .project-container > .logo-buffer {
-	height: 480px;
+	height: 580px;
+}
+
+.sf-gov > .logo {
+	background-color: #b2d5e8;
+	z-index: 0;
+	height: 580px;
+	box-shadow: inset 0 0 17px rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.sf-gov > .logo .container {
+	width: 1060px;
+	margin: 30px auto -61px;
+}
+
+.sf-gov > .logo .container svg {
+	fill: white;
+	width: 140px;
+	height: 140px;
+	stroke: #fff;
+	vertical-align: middle;
+}
+
+.sf-gov > .logo .container path {
+	fill: #fff;
+	stroke: #fff;
+}
+
+.sf-gov > .logo .container .title {
+	color: #fff;
+	display: inline-block;
+	font-size: 40px;
+	vertical-align: middle;
+	margin-left: 10px;
 }
 
 .mood-mod .mood-mod-title {
@@ -291,7 +326,7 @@ h3 {
 
 .mood-mod .video {
 	margin-top: 74px;
-	background-color: #000;	/* margin-top: 480px; */
+	background-color: #000;
 }
 
 .mood-mod .mm-details {
@@ -311,6 +346,30 @@ h3 {
 }
 
 .mood-mod .mm-details h3 em {
+	color: #4285f4;
+}
+
+.mood-mod .logo h3 {
+	text-transform: none;
+	font-size: 70px;
+	color: #b3b3b3;
+	margin-top: 170px;
+	padding: 10px 20px;
+	display: inline-block;
+	margin-bottom: 0;
+	margin-top: 200px;
+	font-weight: 900;
+	display: block;
+	background-color: rgba(255, 255, 255, 0.8);
+	position: relative;
+}
+
+.mood-mod .logo div {
+	margin: auto;
+	position: relative;
+}
+
+.mood-mod .logo h3 em {
 	color: #4285f4;
 }
 
@@ -335,13 +394,6 @@ h3 {
 
 .mood-mod .mm-research h3 {
 
-	/* text-transform: none; */
-
-	/* color: inherit; */
-
-	/* font-size: 25px; */
-
-	/* margin-bottom: 5px; */
 }
 
 .mood-mod .mm-research .project {
@@ -380,8 +432,6 @@ h3 {
 }
 
 .mood-mod .mm-research-inside li {
-
-	/* margin: 9px 0; */
 	line-height: 35px;
 }
 
@@ -422,7 +472,7 @@ h3 {
 }
 
 .mood-mod .story-board .cell div {
-	box-sizing: border-box;	/* padding: 11px 8px; */
+	box-sizing: border-box;
 	height: 40px;
 	font-size: 13px;
 	line-height: 20px;
@@ -480,13 +530,9 @@ h3 {
 }
 
 .mood-mod .cell {
-
-	/* background-color: #fff; */
-
-	/* border: 1px solid #ff7b70; */
 	font-weight: 300;
 	font-size: 19px;
-	line-height: 20px;/* or 167% */
+	line-height: 20px;
 	letter-spacing: 0.02em;
 	width: 471px;
 	box-sizing: border-box;
@@ -498,7 +544,7 @@ h3 {
 
 .mood-mod .cell .image {
 	width: 100%;
-	height: 291px;	/* margin: -20px -20px 10px; */
+	height: 291px;
 	border: 1px solid #ff7b70;
 	background-size: 80%;
 	background-position: center;
@@ -533,7 +579,7 @@ h3 {
 	text-align: center;
 	font-size: 30px;
 	background: #FF7B70;
-	box-sizing: border-box;	/* padding-top: 80px; */
+	box-sizing: border-box;
 	color: #fff;
 	line-height: 340px;
 }
@@ -544,9 +590,9 @@ h3 {
 
 .mood-mod > p {
 	font-size: 16px;
-	line-height: 35px;/* or 219% */
+	line-height: 35px;
 	letter-spacing: 0.02em;
-	padding: 26px 0;	/* font-weight: 300; */
+	padding: 26px 0;
 	max-width: 720px;
 	margin: auto;
 }
@@ -561,8 +607,7 @@ h3 {
 }
 
 .mood-mod section > p {
-
-	/*padding: 36px 170px;*/max-width: 720px;
+	max-width: 720px;
 	margin: 20px auto;
 	line-height: 35px;
 }
@@ -596,7 +641,7 @@ h3 {
 
 .sf-gov .stats > div {
 	width: 250px;
-	text-align: center;	/* height: 60px; */
+	text-align: center;
 }
 
 .sf-gov .stats > div > div {
@@ -609,21 +654,19 @@ h3 {
 }
 
 .sf-gov .mission {
-	flex-grow: 1;	/* height: 480px; */
+	flex-grow: 1;
 	background-color: #eef4f7;
 	width: 530px;
 	display: inline-block;
 	font-size: 19px;
 	line-height: 40px;
-	letter-spacing: 0.02em;	/* color: #5168E4; */
-
-	/* font-weight: 900; */
+	letter-spacing: 0.02em;
 	padding: 90px 45px 90px 35px;
 }
 
 .sf-gov .mission .title {
 	font-size: 24px;
-	line-height: 40px;/* or 167% */
+	line-height: 40px;
 	letter-spacing: 0.02em;
 	color: #5168E4;
 	font-weight: 700;
@@ -632,7 +675,7 @@ h3 {
 .sf-gov .mission .sub-title {
 	font-size: 22px;
 	line-height: 40px;
-	letter-spacing: 0.02em;	/* color: #5168E4; */
+	letter-spacing: 0.02em;
 	font-weight: 600;
 	margin-bottom: 8px;
 }
@@ -666,16 +709,14 @@ h3 {
 }
 
 section.border {
-	border: 1px solid #e8e8e8;	/* padding: 470px 0 40px; */
-
-	/* margin-top: -470px; */
+	border: 1px solid #e8e8e8;
 }
 
 .sf-gov .item .image {
 	width: 320px;
 	height: 260px;
 	border: 1px solid #c5c7d0;
-	margin-bottom: 20px;	/* width: 320px; */
+	margin-bottom: 20px;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -696,9 +737,9 @@ section.border {
 
 .sf-gov > p {
 	font-size: 16px;
-	line-height: 35px;/* or 219% */
+	line-height: 35px;
 	letter-spacing: 0.02em;
-	padding: 36px 170px;	/* font-weight: 300; */
+	padding: 36px 170px;
 }
 
 .sf-gov .info {
@@ -712,7 +753,7 @@ section.border {
 
 .sf-gov .info p {
 	font-size: 16px;
-	line-height: 35px;/* or 219% */
+	line-height: 35px;
 	letter-spacing: 0.02em;
 }
 
@@ -721,7 +762,7 @@ section.border {
 	border: 1px solid #e6e6e7;
 	font-weight: 300;
 	font-size: 12px;
-	line-height: 20px;/* or 167% */
+	line-height: 20px;
 	letter-spacing: 0.02em;
 	width: 251px;
 	box-sizing: border-box;
@@ -760,10 +801,10 @@ section.border {
 }
 
 .sf-gov .problem-solution .header {
-	display: inline-block;	/* padding: 30px; */
+	display: inline-block;
 	font-weight: 500;
 	font-size: 24px;
-	line-height: 29px;/* identical to box height, or 121% */
+	line-height: 29px;
 	letter-spacing: 0.04em;
 	width: 279px;
 	box-sizing: border-box;
@@ -773,7 +814,7 @@ section.border {
 .sf-gov .problem-solution .body {
 	flex-grow: 1;
 	font-size: 18px;
-	line-height: 35px;/* or 194% */
+	line-height: 35px;
 	letter-spacing: 0.03em;
 }
 
@@ -787,7 +828,7 @@ section.border {
 }
 
 .sf-gov .colors > div {
-	width: 440px;/* background-color: rgba(255, 0, 0, 0.2); */
+	width: 440px;
 }
 
 .sf-gov .typography h3 {
@@ -803,7 +844,7 @@ h3 {
 	display: inline-block;
 	margin-right: 31px;
 	font-size: 18px;
-	line-height: 40px;/* or 222% */
+	line-height: 40px;
 	text-align: right;
 	letter-spacing: 0.02em;
 }
@@ -811,7 +852,7 @@ h3 {
 .sf-gov .typography .body {
 	font-weight: 300;
 	font-size: 18px;
-	line-height: 40px;/* or 222% */
+	line-height: 40px;
 	letter-spacing: 0.02em;
 }
 
@@ -897,7 +938,7 @@ h3 {
 	position: absolute;
 	top: 68px;
 	left: -27px;
-	color: #EA4335;	/* color: #EA4335; */
+	color: #EA4335;
 	font-size: 28px;
 }
 
@@ -912,7 +953,7 @@ h3 {
 
 .sf-gov .process p {
 	margin-top: 20px;
-	border-left: 1px solid #E0E0E0;	/* margin-left: 15px; */
+	border-left: 1px solid #E0E0E0;
 	left: -15px;
 	position: relative;
 	padding-left: 15px;
@@ -935,7 +976,7 @@ h3 {
 .lightbox .prev,
 .lightbox .next {
 	position: fixed;
-	top: 0;    /* left: 0; */
+	top: 0;
 	width: 70px;
 	height: 100vh;
 	background-color: rgb(0, 0, 0, 0.0);
@@ -965,9 +1006,7 @@ h3 {
 
 .lightbox .image {
 	max-width: 80%;
-	max-height: 80%;    /*background-position: center;
-	    background-size: contain;
-	    background-repeat: no-repeat;*/
+	max-height: 80%;
 	margin: auto;
 	display: block;
 	transform: translate(-50%, -50%);
@@ -980,152 +1019,297 @@ h3 {
 }
 
 .testing {
-	height: 330px;
-	margin:40px 0;
-	/*border: 1px solid;*/
-	/* width: 1720px; */
-	/* margin: auto; */
+	height: 460px;
+	margin: 40px auto;
 	position: relative;
+	overflow: hidden;
+	width: 1060px;
+	z-index: -1;
 }
 
+.testing .test .reflect,
+.testing .test .image,
 .testing .test {
 	width: 200px;
 	height: 330px;
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	position: absolute;
-	animation-name: cycle-proto;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
-	filter: brightness(0.5);
+}
+
+.testing .test .reflect,
+.testing .test .image {
+	animation-name: cycle-proto-image;
+}
+
+.testing .test {
+	position: absolute;
+	animation-name: cycle-proto;
 	right: -200px;
 	opacity: 0;
 }
 
+.testing .test .reflect {
+	top: 95%;
+	position: relative;
+	z-index: -11;
+	transform: scaleY(-1);
+	opacity: 0.3;
+	-webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 30%);
+	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.mood-mod .testing .test .reflect-bg {
+	width: 164px;
+	height: 330px;
+	position: absolute;
+	top: 100%;
+	left: 19px;
+	z-index: -12;
+	background-color: #fff;
+}
+
+.sf-gov .testing {
+	height: 410px;
+}
+
+.sf-gov .testing .test .reflect-bg {
+	width: 187px;
+	height: 330px;
+	position: absolute;
+	top: 100%;
+	left: 7px;
+	z-index: -11;
+	background-color: #b2d5e8;
+}
+
+.testing .test:nth-child(2) .image,
+.testing .test:nth-child(2) .reflect,
 .testing .test:nth-child(2) {
 	animation-delay: -9s;
 }
 
+.testing .test:nth-child(3) .image,
+.testing .test:nth-child(3) .reflect,
 .testing .test:nth-child(3) {
 	animation-delay: -8s;
 }
 
+.testing .test:nth-child(4) .image,
+.testing .test:nth-child(4) .reflect,
 .testing .test:nth-child(4) {
 	animation-delay: -7s;
 }
 
+.testing .test:nth-child(5) .image,
+.testing .test:nth-child(5) .reflect,
 .testing .test:nth-child(5) {
 	animation-delay: -6s;
+}
+
+.sf-gov .testing .test {
+}
+
+.sf-gov .testing .test .reflect {
+	top: 100%;
+	position: absolute;
+}
+
+.mood-mod .testing .test .reflect {
+	top: 100%;
+	position: absolute;
 }
 
 @keyframes cycle-proto {
 	0% {
 		right: calc(20% - 100px);
 		z-index: -10;
-		filter: brightness(0.5);
 		opacity: 0;
 		transform: scale(0.8, 0.8);
 	}
 
 	5% {
-		right: calc(30% - 100px);  	/*transform: rotate3d(0, 1, 0, 45deg)*/
+		right: calc(30% - 100px);
 		z-index: -5;
 		opacity: 1;
-		filter: brightness(0.65);
 		transform: scale(0.8, 0.8);
 	}
 
 	15% {
 		right: calc(30% - 100px);
 		z-index: -5;
-		filter: brightness(0.65);
 		transform: scale(0.8, 0.8);
 	}
 
-	/*25% {
-		z-index: -3;
-	}*/
 	25% {
-
-		/*background-color: blue;*/
 		z-index: -3;
-		filter: brightness(0.8);  	/*transform: rotate3d(0, 1, 0, 0deg)*/
 		right: calc(40% - 100px);
 		transform: scale(0.9, 0.9);
 	}
 
 	35% {
-
-		/*background-color: blue;*/
 		z-index: -2;
-		filter: brightness(0.8);  	/*transform: rotate3d(0, 1, 0, 0deg)*/
 		right: calc(40% - 100px);
 		transform: scale(0.9, 0.9);
 	}
 
 	45% {
-
-		/*background-color: blue;*/
 		z-index: 0;
-		filter: brightness(1);
 		right: calc(50% - 100px);
 		transform: scale(1, 1);
 	}
 
 	55% {
-
-		/*background-color: blue;*/
 		z-index: 0;
-		filter: brightness(1);
 		right: calc(50% - 100px);
 		transform: scale(1, 1);
 	}
 
 	65% {
-
-		/*background-color: blue;*/
 		z-index: -2;
-		filter: brightness(0.75);
 		right: calc(60% - 100px);
 		transform: scale(0.9, 0.9);
 	}
 
 	75% {
-
-		/*background-color: blue;*/
 		z-index: -3;
-		filter: brightness(0.75);
 		right: calc(60% - 100px);
 		transform: scale(0.9, 0.9);
 	}
 
-	/*75% {
-		z-index: 3;
-	}*/
 	85% {
-		right: calc(70% - 100px);  	/*transform: rotate3d(0, 1, 0, -45deg);*/
+		right: calc(70% - 100px);
 		z-index: -5;
-		filter: brightness(0.5);
 		opacity: 1;
-		filter: brightness(0.5);
 		transform: scale(0.8, 0.8);
 	}
 
 	95% {
-		right: calc(70% - 100px);  	/*transform: rotate3d(0, 1, 0, -45deg);*/
+		right: calc(70% - 100px);
 		z-index: -5;
-		filter: brightness(0.5);
 		opacity: 1;
 		transform: scale(0.8, 0.8);
 	}
 
 	100% {
-		right: calc(80% - 100px);  	/*transform: rotate3d(0, 1, 0, -45deg);*/
+		right: calc(80% - 100px);
 		z-index: -10;
-		filter: brightness(0.5);
 		opacity: 0;
 		transform: scale(0.8, 0.8);
 	}
 
+}
+
+@keyframes cycle-proto-image {
+	0% {
+		filter: brightness(0.5);
+	}
+
+	5% {
+		filter: brightness(0.65);
+	}
+
+	15% {
+		filter: brightness(0.65);
+	}
+
+	25% {
+		filter: brightness(0.8);
+	}
+
+	35% {
+		filter: brightness(0.8);
+	}
+
+	45% {
+		filter: brightness(1);
+	}
+
+	55% {
+		filter: brightness(1);
+	}
+
+	65% {
+		filter: brightness(0.75);
+	}
+
+	75% {
+		filter: brightness(0.75);
+	}
+
+	85% {
+		filter: brightness(0.5);
+	}
+
+	95% {
+		filter: brightness(0.5);
+	}
+
+	100% {
+		filter: brightness(0.5);
+	}
+
+}
+
+.about {
+	color: #fff;
+	background-image: url(../img/Bandung.jpg);
+	background-size: 120%;
+	background-position: 0px -160px;
+}
+
+.about .details {
+	width: 408px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	background-color: rgba(28, 62, 87, 0.6);
+	padding: 37px 47px 33px 30px;
+	box-sizing: border-box;
+	font-family: Rajdhani, sans-serif;
+}
+
+.about .image {
+	flex-grow: 1;
+}
+
+.about h3 {
+	font-size: 24px;
+	line-height: 40px;
+	text-align: left;
+}
+
+.about h4 {
+	color: #fff;
+	text-align: left;
+	text-transform: none;
+	font-size: 24px;
+	margin: 70px 0 6px;
+	font-weight: bold;
+}
+
+.about p {
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+.about em {
+	font-weight: 600;
+}
+
+.about a {
+	color: #fff;
+	text-transform: none;
+	text-decoration: none;
+}
+
+footer {
+	padding: 40px 40px;
+	border-top: 2px solid #efefef;
+}
+
+footer div {
+	text-align: center;
+	color: #a7a8a9;
 }
