@@ -1256,8 +1256,9 @@ h3 {
 .about {
 	color: #fff;
 	background-image: url(../img/Bandung.jpg);
-	background-size: 190%;
-	background-position: -300px -200px;
+	background-image: url(../img/Bandung2.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 .about .details {
