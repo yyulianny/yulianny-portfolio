@@ -1256,12 +1256,12 @@ h3 {
 .about {
 	color: #fff;
 	background-image: url(../img/Bandung.jpg);
-	background-size: 120%;
-	background-position: 0px -160px;
+	background-size: 190%;
+	background-position: -300px -200px;
 }
 
 .about .details {
-	width: 408px;
+	width: 528px;
 	flex-shrink: 0;
 	flex-grow: 0;
 	background-color: rgba(28, 62, 87, 0.6);
@@ -1276,8 +1276,9 @@ h3 {
 
 .about h3 {
 	font-size: 24px;
-	line-height: 40px;
+	line-height: 28px;
 	text-align: left;
+	margin-bottom: 30px;
 }
 
 .about h4 {
