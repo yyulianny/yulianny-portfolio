@@ -1,15 +1,3 @@
-#design {
-	background-image: url(../img/Home-SF_Gov.png);
-	width: 1440px;
-	height: 7741px;
-	position: absolute;
-	top: 0;
-	transform: translateX(-50%);
-	left: 50%;
-	z-index: -1;
-	display: none;
-}
-
 body {
 	font-family: Roboto, sans-serif;
 	color: #575757;
@@ -50,6 +38,12 @@ h4 {
 	text-transform: uppercase;
 	color: #4285f4;
 	font-size: 30px;
+}
+
+h1 {
+	font-family: Rajdhani, sans-serif;
+	font-size: 36px;
+	margin-bottom: 40px;
 }
 
 .gallery {
@@ -153,79 +147,6 @@ h3 {
 	flex-direction: column;
 }
 
-.mood-mod {
-	color: #4F4F4F;
-}
-
-.mood-mod .gallery {
-	font-size: 0;
-}
-
-.mood-mod .gallery .image {
-	display: inline-block;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	cursor: pointer;
-	position: relative;
-}
-
-.mood-mod .gallery.sketches {
-	padding: 30px 0;
-}
-
-.mood-mod .gallery.sketches .image {
-	width: 25%;
-	height: 286px;
-	background-size: 53%;
-}
-
-.mood-mod .gallery.prototype .image {
-	width: 20%;
-	height: 345px;
-	background-size: 70%;
-}
-
-.mood-mod .logic p {
-	margin: 30px auto;
-	font-size: 16px;
-}
-
-.mood-mod .logic .image {
-	height: 136px;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	margin-bottom: 60px;
-}
-
-.mood-mod .logic .image:nth-child(4) {
-	height: 108px;
-}
-
-.mood-mod h3 {
-	text-align: center;
-	text-transform: uppercase;
-	color: #4285f4;
-	font-size: 30px;
-	font-weight: 400;
-	margin-top: 60px;
-	line-height: 1em;
-	font-family: Roboto;
-}
-
-.mood-mod .mood-mod-title h3 {
-	text-transform: uppercase;
-	text-align: center;
-	line-height: 70px;
-	font-size: 30px;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 36px;
-	color: #4285F4;
-	margin-bottom: 0;
-}
 
 .project {
 	width: 253px;
@@ -255,13 +176,17 @@ h3 {
 	background-position: 19px center;
 }
 
+.project.pc {
+	background-image: url(../img/Pinecrest-Logo-Reverse.png);
+	background-color: #202022;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
 .projects {
 	padding: 0 -4px 19px;
 	margin-bottom: 70px;
-}
-
-.mood-mod > .logo {
-	background-image: url(../img/hero_imgFull.jpg);
 }
 
 .project-container > .logo {
@@ -279,279 +204,6 @@ h3 {
 	height: 580px;
 }
 
-.sf-gov > .logo {
-	background-color: #b2d5e8;
-	z-index: 0;
-	height: 580px;
-	box-shadow: inset 0 0 17px rgba(0, 0, 0, 0.4);
-	overflow: hidden;
-}
-
-.sf-gov > .logo .container {
-	width: 1060px;
-	margin: 30px auto -61px;
-}
-
-.sf-gov > .logo .container svg {
-	fill: white;
-	width: 140px;
-	height: 140px;
-	stroke: #fff;
-	vertical-align: middle;
-}
-
-.sf-gov > .logo .container path {
-	fill: #fff;
-	stroke: #fff;
-}
-
-.sf-gov > .logo .container .title {
-	color: #fff;
-	display: inline-block;
-	font-size: 40px;
-	vertical-align: middle;
-	margin-left: 10px;
-}
-
-.mood-mod .mood-mod-title {
-	margin-top: 29px;
-}
-
-.mood-mod .mood-mod-title .logo {
-	background-image: url(../img/hero_imgFull.jpg);
-	height: 480px;
-	background-position: center;
-	background-size: cover;
-}
-
-.mood-mod .video {
-	margin-top: 74px;
-	background-color: #000;
-}
-
-.mood-mod .mm-details {
-	text-align: center;
-}
-
-.mood-mod .mm-details h3 {
-	text-transform: none;
-	font-size: 70px;
-	color: #b3b3b3;
-	padding: 7px 0 40px;
-	border-bottom: 2px solid;
-	display: inline-block;
-	margin-bottom: 0;
-	margin-top: 0px;
-	font-weight: 700;
-}
-
-.mood-mod .mm-details h3 em {
-	color: #4285f4;
-}
-
-.mood-mod .logo h3 {
-	text-transform: none;
-	font-size: 70px;
-	color: #b3b3b3;
-	margin-top: 170px;
-	padding: 10px 20px;
-	display: inline-block;
-	margin-bottom: 0;
-	margin-top: 200px;
-	font-weight: 900;
-	display: block;
-	background-color: rgba(255, 255, 255, 0.8);
-	position: relative;
-}
-
-.mood-mod .logo div {
-	margin: auto;
-	position: relative;
-}
-
-.mood-mod .logo h3 em {
-	color: #4285f4;
-}
-
-.mood-mod .mm-details p {
-	text-align: left;
-	max-width: 710px;
-	display: block;
-	margin: auto;
-	line-height: 23px;
-}
-
-.mood-mod .mm-details h4 {
-	color: #4285f4;
-	text-transform: uppercase;
-	font-size: 30px;
-	margin: 49px 0px 22px;
-}
-
-.mood-mod .mm-research {
-	margin-top: 32px;
-}
-
-.mood-mod .mm-research h3 {
-
-}
-
-.mood-mod .mm-research .project {
-	text-transform: none;
-	font-family: inherit;
-	font-size: 16px;
-	letter-spacing: 0.01em;
-	font-weight: normal;
-	color: #4F4F4F;
-}
-
-.mood-mod .mm-research .project:nth-child(1) {
-}
-
-.mood-mod .mm-research .project:nth-child(2) {
-}
-
-.mood-mod .mm-research-inside p {
-	line-height: 35px;
-}
-
-.mood-mod .mm-research-inside h4 {
-	text-align: center;
-	text-transform: uppercase;
-	color: #4285f4;
-	font-size: 30px;
-	padding: 14px;
-	margin-bottom: 8px;
-}
-
-.mood-mod .mm-research-inside ul {
-	margin-bottom: 56px;
-	width: 720px;
-	margin: 0 auto 0;
-	padding-left: 100px;
-}
-
-.mood-mod .mm-research-inside li {
-	line-height: 35px;
-}
-
-.mood-mod .mm-research-inside em {
-	color: #4285f4;
-	font-size: 21px;
-	vertical-align: middle;
-}
-
-.mood-mod .mm-research-inside {
-	border: 1px solid #bdbdbd;
-	margin-top: -215px;
-	padding: 201px 0px 59px;
-	z-index: -1;
-	margin-bottom: -5px;
-}
-
-.mood-mod .outline {
-	border: 1px solid #c6c6c6;
-	padding: 50px 85px 0;
-}
-
-.mood-mod .persona {
-}
-
-.mood-mod .story-board {
-	padding: 0px 59px;
-	margin-top: 38px;
-}
-
-.mood-mod .story-board .cell {
-	display: inline-block;
-	vertical-align: top;
-	height: 278px;
-	margin: 0 29px;
-	width: 174px;
-	padding: 0;
-}
-
-.mood-mod .story-board .cell div {
-	box-sizing: border-box;
-	height: 40px;
-	font-size: 13px;
-	line-height: 20px;
-	text-transform: initial;
-	text-align: left;
-}
-
-.mood-mod .story-board .cell .image {
-	width: 174px;
-	height: 185px;
-	border: 1px solid #B3B3B3;
-	background-size: 80%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: #fff;
-}
-
-.mood-mod .story-board h3 {
-	margin-bottom: 11px;
-}
-
-.mood-mod .persona .project {
-	margin-top: -52px;
-	margin-bottom: 23px;
-}
-
-.mood-mod .persona {
-}
-
-.mood-mod .stats {
-	font-size: 16px;
-	line-height: 35px;
-	text-align: center;
-}
-
-.mood-mod .stats h4 {
-	color: #FF7B70;
-	font-size: 18px;
-}
-
-.mood-mod .story-board p {
-	text-align: center;
-	width: 450px;
-	text-align: center;
-	display: block;
-	margin: auto;
-	line-height: 27px;
-}
-
-.mood-mod .story-board h4 {
-	margin: 10px 0 24px;
-}
-
-.mood-mod .fill-full {
-}
-
-.mood-mod .cell {
-	font-weight: 300;
-	font-size: 19px;
-	line-height: 20px;
-	letter-spacing: 0.02em;
-	width: 471px;
-	box-sizing: border-box;
-	padding: 20px;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 52px;
-}
-
-.mood-mod .cell .image {
-	width: 100%;
-	height: 291px;
-	border: 1px solid #ff7b70;
-	background-size: 80%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: #fff;
-}
-
 .user-goal-image {
 	width: 50%;
 	flex-shrink: 0;
@@ -561,405 +213,22 @@ h3 {
 	background-position: center;
 }
 
-.mood-mod .projects .cell:nth-child(2) .image {
-	background-size: 70%;
-	background-position: center 38px;
-}
-
-.mood-mod .fill-full p {
-	box-sizing: border-box;
-	padding: 20px 38px;
-	line-height: 26px;
-}
-
-.mood-mod .my-role {
-	flex-grow: 0;
-	flex-shrink: 0;
-	width: 50%;
-	text-align: center;
-	font-size: 30px;
-	background: #FF7B70;
-	box-sizing: border-box;
-	color: #fff;
-	line-height: 340px;
-}
-
-.mood-mod .border-r {
-	border: 1px solid #FF7B70;
-}
-
-.mood-mod > p {
-	font-size: 16px;
-	line-height: 35px;
-	letter-spacing: 0.02em;
-	padding: 26px 0;
-	max-width: 720px;
-	margin: auto;
-}
-
-.mood-mod section.bob {
-	padding: 410px 0 40px;
-	margin-top: -470px;
-}
-
-.mood-mod section.border {
-	border-color: #B3B3B3;
-}
-
-.mood-mod section > p {
-	max-width: 720px;
-	margin: 20px auto;
-	line-height: 35px;
-}
-
-.mood-mod .next-steps {
-	text-align: center;
-	max-width: 1000px;
-}
-
-.sf-gov {
-	font-family: Rubik, sans-serif;
-	color: #1C3E57;
-}
-
-.sf-gov h3 {
-	font-weight: 600;
-	font-style: normal;
-	font-size: 25px;
-	line-height: 28px;
-	color: #1C3E57;
-	margin: 72px 0 33px;
-	font-family: Rubik;
-}
-
-.sf-gov .stats {
-	border: 2px solid #7b8feb;
-	margin-top: 62px;
-	padding: 37px 0 30px;
-	min-height: 0;
-}
-
-.sf-gov .stats > div {
-	width: 250px;
-	text-align: center;
-}
-
-.sf-gov .stats > div > div {
-	margin: 16px;
-}
-
-.sf-gov .stats h4 {
-	font-size: 16px;
-	margin-bottom: 29px;
-}
-
-.sf-gov .mission {
-	flex-grow: 1;
-	background-color: #eef4f7;
-	width: 530px;
-	display: inline-block;
-	font-size: 19px;
-	line-height: 40px;
-	letter-spacing: 0.02em;
-	padding: 90px 45px 90px 35px;
-}
-
-.sf-gov .mission .title {
-	font-size: 24px;
-	line-height: 40px;
-	letter-spacing: 0.02em;
-	color: #5168E4;
-	font-weight: 700;
-}
-
-.sf-gov .mission .sub-title {
-	font-size: 22px;
-	line-height: 40px;
-	letter-spacing: 0.02em;
-	font-weight: 600;
-	margin-bottom: 8px;
-}
-
-.sf-gov .mission p {
-}
-
-.sf-gov .video {
-	flex-grow: 1;
-	background-color: #b2d5e8;
-}
-
-.sf-gov .item {
-	text-align: center;
-	padding-top: 32px;
-	margin-bottom: 36px;
-	width: 320px;
-	line-height: 25px;
-}
-
-.sf-gov .item .title {
-	font-size: 18px;
-	line-height: 21px;
-	color: #1C3E57;
-	margin-bottom: 10px;
-	font-weight: 500;
-}
-
-.sf-gov .item .title em {
-	font-size: 15px;
-}
-
 section.border {
 	border: 1px solid #e8e8e8;
 }
 
-.sf-gov .item .image {
-	width: 320px;
-	height: 260px;
-	border: 1px solid #c5c7d0;
-	margin-bottom: 20px;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
 
-.sf-gov .page {
-	width: 199px;
-	height: 377px;
-	background-size: contain;
-	display: inline-block;
-	margin-right: 84px;
-	background-repeat: no-repeat;
-	background-position: center 0;
-}
 
-.sf-gov .page:nth-child(4n+4) {
-	margin-right: 0;
-}
 
-.sf-gov > p {
-	font-size: 16px;
-	line-height: 35px;
-	letter-spacing: 0.02em;
-	padding: 36px 170px;
-}
 
-.sf-gov .info {
-	background-color: rgb(238, 244, 247);
-	padding: 1px 170px 78px;
-}
 
-.sf-gov .info h3 {
-	margin: 46px 0 39px;
-}
 
-.sf-gov .info p {
-	font-size: 16px;
-	line-height: 35px;
-	letter-spacing: 0.02em;
-}
 
-.sf-gov .cell {
-	background-color: #eef4f7;
-	border: 1px solid #e6e6e7;
-	font-weight: 300;
-	font-size: 12px;
-	line-height: 20px;
-	letter-spacing: 0.02em;
-	width: 251px;
-	box-sizing: border-box;
-	padding: 20px;
-}
 
-.sf-gov .cell .image {
-	width: 250px;
-	height: 191px;
-	margin: -20px -20px 10px;
-}
 
-.sf-gov .colors {
-	flex-grow: 1;
-	width: 530px;
-	box-sizing: border-box;
-	padding: 0 50px;
-	text-align: center;
-}
 
-.sf-gov .typography {
-	flex-grow: 1;
-	background-color: #eef4f7;
-	height: 408px;
-	width: 530px;
-	padding: 20px 50px;
-}
 
-.sf-gov .problem-solution {
-	padding: 10px 92px;
-}
 
-.sf-gov .problem-solution > div {
-	display: flex;
-	margin: 40px 0;
-}
-
-.sf-gov .problem-solution .header {
-	display: inline-block;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 29px;
-	letter-spacing: 0.04em;
-	width: 279px;
-	box-sizing: border-box;
-	flex-shrink: 0;
-}
-
-.sf-gov .problem-solution .body {
-	flex-grow: 1;
-	font-size: 18px;
-	line-height: 35px;
-	letter-spacing: 0.03em;
-}
-
-.sf-gov .problem-solution li {
-	list-style: initial;
-	margin-left: 19px;
-}
-
-.sf-gov .colors h3 {
-	margin: 53px 0px 25px;
-}
-
-.sf-gov .colors > div {
-	width: 440px;
-}
-
-.sf-gov .typography h3 {
-	margin-bottom: 22px;
-	margin-top: 43px;
-}
-
-h3 {
-}
-
-.sf-gov .typography .header {
-	width: 150px;
-	display: inline-block;
-	margin-right: 31px;
-	font-size: 18px;
-	line-height: 40px;
-	text-align: right;
-	letter-spacing: 0.02em;
-}
-
-.sf-gov .typography .body {
-	font-weight: 300;
-	font-size: 18px;
-	line-height: 40px;
-	letter-spacing: 0.02em;
-}
-
-.sf-gov .typography div:nth-child(1) .body {
-}
-
-.sf-gov .typography div:nth-child(2) .body {
-	font-weight: 100;
-}
-
-.sf-gov .typography div:nth-child(3) .body {
-	font-weight: 600;
-}
-
-.sf-gov .typography div:nth-child(4) .body {
-	font-weight: 600;
-}
-
-.sf-gov .typography div:nth-child(5) .body {
-	font-weight: 600;
-}
-
-.sf-gov .typography div:nth-child(6) .body {
-	font-weight: 500;
-}
-
-.sf-gov .typography div:nth-child(7) .body {
-	font-weight: 600;
-}
-
-.sf-gov .colors .color-swatch {
-	display: inline-block;
-	margin: 2px 18px 4px;
-}
-
-.sf-gov .colors .color-swatch .color {
-	width: 176px;
-	height: 36px;
-	border-radius: 5px;
-	margin-bottom: 7px;
-	font-size: 16px;
-	line-height: 20px;
-	letter-spacing: 0.02em;
-}
-
-.sf-gov p.conclusion {
-	font-weight: 300;
-	font-size: 18px;
-}
-
-.sf-gov .process {
-	margin-bottom: 50px;
-}
-
-.sf-gov .process .step {
-	width: 150px;
-	padding: 3px;
-	position: relative;
-}
-
-.sf-gov .process .title {
-	background-color: #536BDC;
-	border-radius: 50%;
-	width: 144px;
-	height: 144px;
-	color: #fff;
-	text-align: center;
-	line-height: 144px;
-}
-
-.sf-gov .process .step:nth-child(1) .title {
-	line-height: 23px;
-	padding-top: 49px;
-	box-sizing: border-box;
-}
-
-.sf-gov .process .step:nth-child(1) p {
-	border-left: none;
-}
-
-.sf-gov .process .step:last-child:after {
-	content: "\02190";
-	position: absolute;
-	top: 68px;
-	left: -27px;
-	color: #EA4335;
-	font-size: 28px;
-}
-
-.sf-gov .process .step:last-child:before {
-	content: "\02192";
-	position: absolute;
-	top: 54px;
-	left: -26px;
-	color: #EA4335;
-	font-size: 28px;
-}
-
-.sf-gov .process p {
-	margin-top: 20px;
-	border-left: 1px solid #E0E0E0;
-	left: -15px;
-	position: relative;
-	padding-left: 15px;
-	width: 150px;
-	height: 160px;
-}
 
 .lightbox {
 	position: fixed;
@@ -1061,30 +330,6 @@ h3 {
 	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
-.mood-mod .testing .test .reflect-bg {
-	width: 164px;
-	height: 330px;
-	position: absolute;
-	top: 100%;
-	left: 19px;
-	z-index: -12;
-	background-color: #fff;
-}
-
-.sf-gov .testing {
-	height: 410px;
-}
-
-.sf-gov .testing .test .reflect-bg {
-	width: 187px;
-	height: 330px;
-	position: absolute;
-	top: 100%;
-	left: 7px;
-	z-index: -11;
-	background-color: #b2d5e8;
-}
-
 .testing .test:nth-child(2) .image,
 .testing .test:nth-child(2) .reflect,
 .testing .test:nth-child(2) {
@@ -1107,19 +352,6 @@ h3 {
 .testing .test:nth-child(5) .reflect,
 .testing .test:nth-child(5) {
 	animation-delay: -6s;
-}
-
-.sf-gov .testing .test {
-}
-
-.sf-gov .testing .test .reflect {
-	top: 100%;
-	position: absolute;
-}
-
-.mood-mod .testing .test .reflect {
-	top: 100%;
-	position: absolute;
 }
 
 @keyframes cycle-proto {
@@ -1251,59 +483,6 @@ h3 {
 		filter: brightness(0.5);
 	}
 
-}
-
-.about {
-	color: #fff;
-	background-image: url(../img/Bandung.jpg);
-	background-image: url(../img/Bandung2.jpg);
-	background-size: cover;
-	background-position: center;
-}
-
-.about .details {
-	width: 528px;
-	flex-shrink: 0;
-	flex-grow: 0;
-	background-color: rgba(28, 62, 87, 0.6);
-	padding: 37px 47px 33px 30px;
-	box-sizing: border-box;
-	font-family: Rajdhani, sans-serif;
-}
-
-.about .image {
-	flex-grow: 1;
-}
-
-.about h3 {
-	font-size: 24px;
-	line-height: 28px;
-	text-align: left;
-	margin-bottom: 30px;
-}
-
-.about h4 {
-	color: #fff;
-	text-align: left;
-	text-transform: none;
-	font-size: 24px;
-	margin: 70px 0 6px;
-	font-weight: bold;
-}
-
-.about p {
-	line-height: 25px;
-	letter-spacing: 1px;
-}
-
-.about em {
-	font-weight: 600;
-}
-
-.about a {
-	color: #fff;
-	text-transform: none;
-	text-decoration: none;
 }
 
 footer {

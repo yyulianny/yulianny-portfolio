@@ -60,10 +60,10 @@ var loadImage = function() {
 	})
 }
 
-$('.project-link').click(function(e){
-	e.preventDefault();
+// $('.project-link').click(function(e){
+// 	e.preventDefault();
 
-	$body.stop().animate({
-		scrollTop:$($(this).attr('href')).position().top - 200
-	}, 500, 'swing');
-})
+// 	$body.stop().animate({
+// 		scrollTop:$($(this).attr('href')).position().top - 200
+// 	}, 500, 'swing');
+// })

@@ -1,0 +1,59 @@
+.about {
+	background-size: cover;
+	background-position: center;
+}
+
+.about .details {
+	/* padding: 37px 47px 33px 30px; */
+	box-sizing: border-box;
+	font-family: Rajdhani, sans-serif;
+}
+
+.about .image {
+	flex-grow: 1;
+}
+
+.about h3 {
+	font-size: 24px;
+	line-height: 48px;
+	text-align: left;
+	margin-bottom: 30px;
+	background-image: url(../img/Bandung2.jpg);
+	height: 360px;
+	color: #fff;
+	background-size: cover;
+	background-position: center;
+	padding: 80px 490px 50px 50px;
+	box-sizing: border-box;
+	font-size: 36px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #082952;
+}
+
+.about h4 {
+	color: #fff;
+	text-align: left;
+	text-transform: none;
+	font-size: 24px;
+	margin: 70px 0 6px;
+	font-weight: bold;
+}
+
+.about p {
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+.about em {
+	font-weight: 600;
+}
+
+.about a {
+	color: #5d5d5d;
+	text-transform: none;
+	text-decoration: none;
+}
+
+.about-header {
+	/* padding-bottom: 0; */
+}
