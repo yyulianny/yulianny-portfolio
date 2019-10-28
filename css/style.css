@@ -1,5 +1,5 @@
 body {
-	font-family: Roboto, sans-serif;
+	font-family: Rajdhani, sans-serif;
 	color: #575757;
 }
 
@@ -23,7 +23,8 @@ nav {
 	box-sizing: border-box;
 }
 
-nav a {
+nav .dropdown,
+nav > a {
 	text-decoration: none;
 	color: #575757;
 	font-family: Rajdhani, sans-serif;
@@ -31,7 +32,14 @@ nav a {
 	font-size: 20px;
 	font-weight: 600;
 	margin-left: 20px;
+	display: inline;
+	cursor: pointer;
 }
+nav .dropdown:hover,
+nav > a:hover {
+	color: black;
+}
+
 
 h4 {
 	text-align: center;
@@ -74,7 +82,7 @@ h1 {
 
 .billboard {
 	margin: 0;
-	height: 480px;
+	height: 360px;
 	font-family: Rajdhani, sans-serif;
 	min-height: 0;
 	border-bottom: 2px solid #efefef;
@@ -160,6 +168,7 @@ h3 {
 	text-transform: uppercase;
 	box-sizing: border-box;
 	line-height: 269px;
+	/* flex-shrink: 0; */
 }
 
 .project.mm {
@@ -185,8 +194,9 @@ h3 {
 }
 
 .projects {
-	padding: 0 -4px 19px;
+	padding: 0 0px 19px;
 	margin-bottom: 70px;
+	flex-wrap: wrap;
 }
 
 .project-container > .logo {
@@ -493,4 +503,39 @@ footer {
 footer div {
 	text-align: center;
 	color: #a7a8a9;
+}
+
+.dropdown {position: relative;/* background-color: red; */z-index: 1;}
+
+.dropdown ul {
+	position: absolute;
+	left: 0;
+	top: 26px;
+	text-align: left;
+	background-color: #575757;
+	padding: 5px 0;
+	display: none;
+	/*opacity: 0;*/
+	box-sizing: border-box;
+	transition: opacity 0.2s;
+}
+
+.dropdown ul li {
+	white-space: nowrap;
+	line-height: 26px;
+	padding: 5px 10px;
+}
+
+.dropdown ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.dropdown ul li:hover {
+	background-color: #686868;
+}
+
+.dropdown:hover ul {
+	display: block;
+	/*opacity: 1;*/
 }

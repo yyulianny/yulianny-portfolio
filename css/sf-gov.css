@@ -29,6 +29,7 @@
 	height: 140px;
 	vertical-align: middle;
 	background-image: url(../img/sf-gov.png);
+	display: inline-block;
 }
 
 .sf-gov > .logo .container .title {
