@@ -8,6 +8,26 @@
 	color: #4F4F4F;
 }
 
+/*_________________________________*/
+
+.pinecrest .info {
+	background-color: rgb(255, 248, 220);
+	padding: 1px 170px 78px;
+}
+
+.pinecrest .info h3 {
+	margin: 46px 0 39px;
+}
+
+.pinecrest .info p {
+	font-size: 16px;
+	line-height: 35px;
+	letter-spacing: 0.02em;
+}
+
+/*_________________________________*/
+
+
 .pinecrest .gallery {
 	font-size: 0;
 }
