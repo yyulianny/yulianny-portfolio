@@ -1,6 +1,6 @@
 body {
 	font-family: Rajdhani, sans-serif;
-	color: #575757;
+	color: #4f4f4f;
 }
 
 .center {
@@ -35,6 +35,7 @@ nav > a {
 	margin-left: 20px;
 	display: inline;
 	cursor: pointer;
+	line-height: 30px;
 }
 nav .dropdown:hover,
 nav > a:hover {
@@ -82,13 +83,18 @@ h1 {
 }
 
 .yy {
-	font-size: 48px;
-	font-family: Open Sans;
 	flex-grow: 1;
 	text-align: left;
-
-
-
+	font-family: Rajdhani;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	
+/* or 150% */
+	letter-spacing: -0.02em;
+	text-transform: none;
+	background-color: white;
+	line-height: 20px;
 }
 
 
@@ -109,11 +115,13 @@ h1 {
 }
 
 .billboard .sub-title {
-	font-family: Open-sans;
-	font-size: 35px;
-	font-weight: 200px;
-	line-height: 50px;
+	font-family: Open Sans;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 43px;
 	margin-bottom: 20px;
+	padding-right: 400px;
+	padding-left: 20px;
 }
 
 .billboard .quote {
@@ -172,46 +180,106 @@ h3 {
 
 
 .project {
-	width: 253px;
-	height: 269px;
+	width: 491px;
+	height: 491px;
 	background-color: #e0e0e0;
 	font-family: Rajdhani;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 24px;
-	text-align: center;
-	text-transform: uppercase;
+	font-size: 20px;
+	/* text-align: center; */
+	/* text-transform: uppercase; */
 	box-sizing: border-box;
-	line-height: 269px;
+	/* line-height: 269px; */
 	/* flex-shrink: 0; */
+	margin-bottom: 40px;
+	/* padding: 20px; */
+	font-weight: 400;
+	text-decoration: none;
 }
 
+.project .details {
+	/* letter-spacing: -0.02em; */
+	color: #FFF;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	padding: 60px 40px;
+	box-sizing: border-box;
+	line-height: 23px;
+	opacity: 0;
+	transition: 0.3s opacity;
+}
+
+.project:hover .details {
+	opacity: 1;
+}
+
+span.details {}
+.project .details > span {display: block;}
+
+.project .title {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.project .sub-title {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+
+.project .categories {
+	font-weight: 700;
+	margin-top: 20px;
+}
+
+
+
 .project.mm {
-	background-image: url(../img/moodmod-logo2.png);
+	background-image: url(../img/h-mm.png);
 	background-color: #B2D5E8;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
+
+.project.mm .details {
+	background-color: #4285F4;
+}
+
 
 .project.sf {
-	background-image: url(../img/SF_logo.png);
-	background-color: #202022;
-	background-repeat: no-repeat;
-	background-position: 19px center;
-}
-
-.project.pc {
-	background-image: url(../img/Pinecrest-Logo-Reverse.png);
+	background-image: url(../img/h-sfpng.png);
 	background-color: #202022;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
+.project.sf .details {
+	background-color:#1C3E57;
+}
+
+.project.pc {
+	background-image: url(../img/h-Pinecrest.png);
+	background-color: #fafafa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 116%;
+}
+
+.project.pc .details {
+	background-color: #747A4A;
+}
+
 .projects {
 	padding: 0 0px 19px;
 	margin-bottom: 70px;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 20px;
 }
 
 .project-container > .logo {
