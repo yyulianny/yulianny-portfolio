@@ -274,6 +274,18 @@ span.details {}
 	background-color: #747A4A;
 }
 
+.project.onia {
+	background-image: url(../img/h-Onia.png);
+	background-color: #fafafa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.project.onia .details {
+	background-color: #691834;
+}
+
 .projects {
 	padding: 0 0px 19px;
 	margin-bottom: 70px;

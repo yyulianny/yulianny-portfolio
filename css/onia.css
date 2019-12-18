@@ -1,0 +1,565 @@
+.onia > .logo {
+	background-image: url(../img/O-HeroImg.jpg);
+	background-attachment: unset;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: calc(100% + 40px);
+	position: relative;
+	margin-bottom: 20px;
+	height: 435px;
+	left: -20px;
+}
+
+.onia {
+	color: #4F4F4F;
+	position: relative;
+	font-family: Open Sans;
+	padding: 0 20px;
+}
+
+.onia > .logo-buffer {height: 480px;}
+
+/*_________________________________*/
+
+.onia .info {
+	background-color: rgb(255, 248, 220);
+	padding: 1px 170px 48px;
+	font-size: 18px;
+}
+
+.onia .info h3 {
+	margin: 46px 0 19px;
+}
+
+.onia .info p {
+	font-size: 16px;
+	line-height: 35px;
+	letter-spacing: 0.02em;
+}
+
+/*_________________________________*/
+
+
+.onia .gallery {
+	font-size: 0;
+}
+
+.onia .gallery.titles .image {
+	margin-top: 20px;
+}
+
+.onia .gallery.titles .image:before {
+	content: attr(data-title);
+	font-size: 16px;
+	display: block;
+	text-align: center;
+	position: relative;
+	top: -25px;
+	text-transform: uppercase;
+}
+
+.onia h1 {font-weight: bold;font-size: 36px;font-family: Open Sans;text-transform: uppercase;color: #691734;/* padding-left: 20px; */margin: 60px 0 40px 0;}
+
+.onia h2 {font-style: normal;font-weight: bold;font-size: 50px;line-height: 64px;color: #691834;padding-top: 50px;}
+
+.onia .quote {font-weight: bold;font-size: 30px;line-height: 41px;text-align: right;color: #691834;}
+
+.onia .quote span {
+	display: block;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 178.2%;
+/* or 36px */
+	text-align: right;
+	color: #4F4F4F;
+}
+
+.onia strong {
+	font-weight: bold;
+}
+
+.onia .gallery .image {
+	display: inline-block;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: relative;
+	width: 33%;
+	height: 222px;
+}
+
+.onia .gallery.sketches {
+	padding: 0px 160px 0px;
+	margin-top: 3px;
+}
+
+.onia .gallery.sketches .image {
+	width: 29%;
+	height: 132px;
+	box-sizing: border-box;
+	/* background-size: 53%; */
+	margin: 60px 2% 0px;
+}
+
+.onia .gallery.sketches.brand {
+    padding-top: 0;
+}
+.onia .gallery.sketches.brand .image {background-size: 70%;height: 170px;margin-top: 20px;}
+
+.onia .gallery.protos {
+	padding: 30px 0;
+}
+
+.onia .gallery.protos .image {
+	width: 33%;
+	height: 292px;
+}
+
+.onia .gallery.protos .image:nth-child(4),
+.onia .gallery.protos .image:nth-child(5),
+.onia .gallery.protos .image:nth-child(6) {
+	height: 587px;
+	margin-top: 80px;
+}
+
+.onia .gallery.photos {
+	padding: 30px 0;
+}
+
+.onia .gallery.photos .image {
+	width: 33%;
+	height: 233px;
+	background-size: cover;
+}
+
+.onia .background {
+	background-color: #FFF8DC;
+	box-sizing: border-box;
+	padding: 20px;
+	width: calc(100% + 40px);
+	position: relative;
+	left: -20px;
+}
+
+
+.onia .gallery.prototype .image {
+	width: 20%;
+	height: 345px;
+	background-size: 70%;
+}
+
+.onia .logic p {
+	margin: 30px auto;
+	font-size: 16px;
+}
+
+.onia .logic .image {
+	height: 136px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 60px;
+}
+
+.onia .logic .image:nth-child(4) {
+	height: 108px;
+}
+
+.onia .flex.even {justify-content: space-between;}
+.onia .flex.even p {
+	/* flex-grow: 1; */
+	/* flex-shrink: 1; */
+	width: 47%;
+	/* padding: 20px; */
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.onia .sketches {height: 422px;}
+
+.onia .sketches div {width: 100%;padding: 130px 30px;line-height: 29px;}
+
+.onia .sketches div.image {background-image: url(../img/O-sketch.jpg);background-size: contain;background-position: center;}
+
+.onia .border {
+	border: 1px solid #691734;
+}
+
+.onia h3 {
+	text-align: left;
+	text-transform: uppercase;
+	color: #691834;
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 100px;
+	line-height: 1em;
+	/* padding-left: 20px; */
+	margin-bottom: 20px;
+}
+
+.onia img.full {
+	max-width: 100%;
+	margin-top: 26px;
+}
+
+.onia .fill {
+	width: calc(100% + 40px) !important;
+	max-width: calc(100% + 40px) !important;
+	position: relative;
+	left: -20px;
+	/* height: 422px; */
+}
+
+.onia .onia-title h3 {
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 70px;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	color: #4285F4;
+	margin-bottom: 0;
+}
+
+.onia .onia-title {
+	margin-top: 29px;
+}
+
+.onia .onia-title .logo {
+	background-image: url(../img/hero_imgFull.jpg);
+	height: 480px;
+	background-position: center;
+	background-size: cover;
+}
+
+.onia .video {
+	margin-top: 74px;
+	/* background-color: #000; */
+}
+
+.onia .mm-details {
+	text-align: center;
+}
+
+.onia .mm-details h3 {
+	text-transform: none;
+	font-size: 70px;
+	color: #b3b3b3;
+	padding: 7px 0 40px;
+	border-bottom: 2px solid;
+	display: inline-block;
+	margin-bottom: 0;
+	margin-top: 0px;
+	font-weight: 700;
+}
+
+.onia .mm-details h3 em {
+	color: #4285f4;
+}
+
+.onia .logo h3 {
+	text-transform: none;
+	font-size: 70px;
+	color: #b3b3b3;
+	margin-top: 170px;
+	padding: 10px 20px;
+	display: inline-block;
+	margin-bottom: 0;
+	margin-top: 200px;
+	font-weight: 900;
+	display: block;
+	background-color: rgba(255, 255, 255, 0.8);
+	position: relative;
+}
+
+.onia .logo div {
+	margin: auto;
+	position: relative;
+}
+
+.onia .logo h3 em {
+	color: #4285f4;
+}
+
+.onia .mm-details p {
+	text-align: left;
+	max-width: 710px;
+	display: block;
+	margin: auto;
+	line-height: 23px;
+}
+
+.onia .mm-details h4 {
+	color: #4285f4;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin: 49px 0px 22px;
+}
+
+.onia .mm-research {
+	margin-top: 32px;
+}
+
+.onia .mm-research h3 {
+}
+
+.onia .mm-research .project {
+	text-transform: none;
+	font-family: inherit;
+	font-size: 16px;
+	letter-spacing: 0.01em;
+	font-weight: normal;
+	color: #4F4F4F;
+}
+
+.onia .mm-research .project:nth-child(1) {
+}
+
+.onia .mm-research .project:nth-child(2) {
+}
+
+.onia .mm-research-inside p {
+	line-height: 35px;
+}
+
+.onia .mm-research-inside h4 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #4285f4;
+	font-size: 30px;
+	padding: 14px;
+	margin-bottom: 8px;
+}
+
+.onia .mm-research-inside ul {
+	margin-bottom: 56px;
+	width: 720px;
+	margin: 0 auto 0;
+	padding-left: 100px;
+}
+
+.onia .mm-research-inside li {
+	line-height: 35px;
+}
+
+.onia .mm-research-inside em {
+	color: #4285f4;
+	font-size: 21px;
+	vertical-align: middle;
+}
+
+.onia .mm-research-inside {
+	border: 1px solid #bdbdbd;
+	margin-top: -215px;
+	padding: 201px 0px 59px;
+	z-index: -1;
+	margin-bottom: -5px;
+}
+
+.onia .outline {
+	border: 1px solid #c6c6c6;
+	padding: 50px 85px 0;
+}
+
+.onia .persona {
+}
+
+.onia .story-board {
+	padding: 0px 59px;
+	margin-top: 38px;
+}
+
+.onia .story-board .cell {
+	display: inline-block;
+	vertical-align: top;
+	height: 278px;
+	margin: 0 29px;
+	width: 174px;
+	padding: 0;
+}
+
+.onia .story-board .cell div {
+	box-sizing: border-box;
+	height: 40px;
+	font-size: 13px;
+	line-height: 20px;
+	text-transform: initial;
+	text-align: left;
+}
+
+.onia .story-board .cell .image {
+	width: 174px;
+	height: 185px;
+	border: 1px solid #B3B3B3;
+	background-size: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+.onia .story-board h3 {
+	margin-bottom: 11px;
+}
+
+.onia .persona .project {
+	margin-top: -52px;
+	margin-bottom: 23px;
+}
+
+.onia .persona {
+}
+
+.onia .stats {
+	font-size: 16px;
+	line-height: 35px;
+	text-align: center;
+}
+
+.onia .stats h4 {
+	color: #FF7B70;
+	font-size: 18px;
+}
+
+.onia .story-board p {
+	text-align: center;
+	width: 450px;
+	text-align: center;
+	display: block;
+	margin: auto;
+	line-height: 27px;
+}
+
+.onia .story-board h4 {
+	margin: 10px 0 24px;
+}
+
+.onia .fill-full {
+}
+
+.onia .cell {
+	font-weight: 300;
+	font-size: 19px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	width: 471px;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 52px;
+}
+
+.onia .cell .image {
+	width: 100%;
+	height: 291px;
+	border: 1px solid #ff7b70;
+	background-size: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #fff;
+}
+
+.onia .projects .cell:nth-child(2) .image {
+	background-size: 70%;
+	background-position: center 38px;
+}
+
+.onia .fill-full p {
+	box-sizing: border-box;
+	padding: 20px 38px;
+	line-height: 26px;
+}
+
+.onia .my-role {
+	flex-grow: 0;
+	flex-shrink: 0;
+	width: 50%;
+	text-align: center;
+	font-size: 30px;
+	background: #FF7B70;
+	box-sizing: border-box;
+	color: #fff;
+	line-height: 340px;
+}
+
+.onia .border-r {
+	border: 1px solid #FF7B70;
+}
+
+.onia > p {
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	/* padding: 26px 0px 26px 20px; */
+	/* max-width: 720px; */
+	/* margin: auto; */
+}
+
+.onia section.bob {
+	padding: 410px 0 40px;
+	margin-top: -470px;
+}
+
+.onia section.border {
+	border-color: #B3B3B3;
+}
+
+.onia section > p {
+	max-width: 720px;
+	margin: 20px auto;
+	line-height: 35px;
+}
+
+.onia .next-steps {
+	text-align: center;
+	max-width: 1000px;
+}
+
+.onia .testing .test .reflect-bg {
+	width: 164px;
+	height: 330px;
+	position: absolute;
+	top: 100%;
+	left: 19px;
+	z-index: -12;
+	background-color: #fff;
+}
+
+.onia .testing .test .reflect {
+	top: 100%;
+	position: absolute;
+}
+
+.onia .problem-solution {
+	padding: 10px 92px;
+}
+
+.onia .problem-solution > div {
+	display: flex;
+	margin: 40px 0;
+}
+
+.onia .problem-solution .header {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.04em;
+	width: 279px;
+	box-sizing: border-box;
+	flex-shrink: 0;
+}
+
+.onia .problem-solution .body {
+	flex-grow: 1;
+	font-size: 18px;
+	line-height: 35px;
+	letter-spacing: 0.03em;
+}
+
+.onia .problem-solution li {
+	list-style: initial;
+	margin-left: 19px;
+}
