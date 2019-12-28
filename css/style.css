@@ -31,7 +31,7 @@ nav > a {
 	font-family: Rajdhani, sans-serif;
 	text-transform: uppercase;
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 500;
 	margin-left: 20px;
 	display: inline;
 	cursor: pointer;
@@ -131,9 +131,11 @@ h1 {
 h2 {
 	font-size: 26px;
 	text-transform: uppercase;
-	text-align: center;
+	text-align: left;
 	padding: 20px 0 52px;
 	font-family: Rajdhani;
+	margin-left: 20px;
+}
 }
 
 .filler1 {
@@ -285,6 +287,105 @@ span.details {}
 .project.onia .details {
 	background-color: #691834;
 }
+
+.project.blalb {
+	background-image: url(../img/h-Blalb.png);
+	background-color: #fafafa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.project.blalb .details {
+	background-color: #655397;
+}
+
+.project.mall {
+	background-image: url(../img/h-Mall.png);
+	background-color: #fafafa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.project.mall .details {
+	background-color: #FF3574;
+}
+
+.project.d {
+	background-image: url(../img/h-Deadly.png);
+	background-color: #fafafa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.project.d .details {
+	background-color: #972546;
+}
+
+.project.g {
+	background-image: url(../img/h-Gurame.png);
+	background-color: #fafafa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.project.g .details {
+	background-color: #066E7B;
+}
+
+.project.terra {
+	background-image: url(../img/h-Terra.png);
+	background-color: #fafafa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.project.terra .details {
+	background-color: #066E7B;
+}
+
+.project.pbc {
+	background-image: url(../img/h-Pbc.png);
+	background-color: #fafafa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.project.pbc .details {
+	background-color: #066E7B;
+}
+
+.project.burmese {
+	background-image: url(../img/h-Burmese.png);
+	background-color: #fafafa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.project.burmese .details {
+	background-color: #066E7B;
+}
+
+
+.project.photography {
+	background-image: url(../img/photo-HeroImg.png);
+	background-color: #fafafa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.project.photography .details {
+	background-color: #066E7B;
+}
+
+
 
 .projects {
 	padding: 0 0px 19px;

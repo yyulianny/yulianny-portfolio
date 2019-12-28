@@ -46,6 +46,7 @@
 }
 
 .sf-gov h3 {
+	text-align: left;
 	font-weight: 600;
 	font-style: normal;
 	font-size: 25px;
@@ -55,25 +56,38 @@
 	font-family: Rubik;
 }
 
+.sf-gov img.full {
+	max-width: 100%;
+	margin-top: 26px;
+}
+
+
 .sf-gov .stats {
-	border: 2px solid #7b8feb;
+	/*border: 2px solid #7b8feb;*/
 	margin-top: 62px;
 	padding: 37px 0 30px;
 	min-height: 0;
 }
 
 .sf-gov .stats > div {
-	width: 250px;
-	text-align: center;
+	/*width: 250px;
+	text-align: center;*/
+	width: 450px;
+	text-align: left;
+	margin-left: 20px;
+
 }
 
 .sf-gov .stats > div > div {
 	margin: 16px;
+	margin-left: 20px;
 }
 
 .sf-gov .stats h4 {
 	font-size: 16px;
 	margin-bottom: 29px;
+	text-align: left;
+	margin-left: 20px;
 }
 
 .sf-gov .mission {
@@ -110,6 +124,68 @@
 	flex-grow: 1;
 	background-color: #b2d5e8;
 }
+
+
+.sf-gov .target {
+	flex-grow: 1;
+	background-color: #eef4f7;
+	width: 530px;
+	display: inline-block;
+	font-size: 19px;
+	line-height: 40px;
+	letter-spacing: 0.02em;
+	padding: 90px 45px 90px 35px;
+}
+
+.sf-gov .target .title {
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: 0.02em;
+	/*color: #5168E4;*/
+	font-weight: 700;
+}
+
+.sf-gov .target .sub-title {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 29px;
+	letter-spacing: 0.04em;
+	width: 279px;
+	box-sizing: border-box;
+	flex-shrink: 0;
+
+	/*font-size: 22px;
+	line-height: 40px;
+	letter-spacing: 0.02em;
+	font-weight: 600;
+	margin-bottom: 8px;*/
+}
+
+.sf-gov .target p {
+}
+
+.sf-gov .user {
+	/*flex-grow: 1;*/
+	background-color: #eef4f7;
+}
+
+.sf-gov .user .sub-title {
+	display: inline-block;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 29px;
+	letter-spacing: 0.04em;
+	width: 279px;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	/*font-size: 22px;
+	line-height: 40px;
+	letter-spacing: 0.02em;
+	font-weight: 600;
+	margin-bottom: 8px;*/
+}
+
 
 .sf-gov .item {
 	text-align: center;
@@ -210,19 +286,26 @@
 	padding: 20px 50px;
 }
 
+.sf-gov .problem-solution strong{
+	font-weight: bold;
+
+}
 .sf-gov .problem-solution {
-	padding: 10px 92px;
+	/*padding: 10px 92px;*/
+	padding: 10px 0px;
+
 }
 
 .sf-gov .problem-solution > div {
 	display: flex;
-	margin: 40px 0;
+	/*margin: 40px 0;*/
+	margin: 20px 0;
 }
 
 .sf-gov .problem-solution .header {
 	display: inline-block;
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 22px;
 	line-height: 29px;
 	letter-spacing: 0.04em;
 	width: 279px;
