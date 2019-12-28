@@ -59,8 +59,7 @@ h1 {
 .gallery {
 }
 
-.gallery .image {
-}
+.gallery .image {cursor: pointer;}
 
 .gallery.phone .image:after {
 	content: '';
@@ -341,11 +340,11 @@ span.details {}
 	background-color: #fafafa;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 }
 
 .project.terra .details {
-	background-color: #066E7B;
+	background-color: #bf7e11;
 }
 
 .project.pbc {
@@ -353,23 +352,23 @@ span.details {}
 	background-color: #fafafa;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 }
 
 .project.pbc .details {
-	background-color: #066E7B;
+	background-color: #757344;
 }
 
 .project.burmese {
 	background-image: url(../img/h-Burmese.png);
-	background-color: #fafafa;
+	background-color: #404349;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: 110%;
 }
 
 .project.burmese .details {
-	background-color: #066E7B;
+	background-color: #580e10;
 }
 
 

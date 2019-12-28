@@ -52,7 +52,7 @@
 	font-size: 25px;
 	line-height: 28px;
 	color: #1C3E57;
-	margin: 72px 0 33px;
+	margin: 72px 0 30px 30px;
 	font-family: Rubik;
 }
 
@@ -64,30 +64,36 @@
 
 .sf-gov .stats {
 	/*border: 2px solid #7b8feb;*/
-	margin-top: 62px;
-	padding: 37px 0 30px;
+	margin-top: -18px;
+	padding: 37px 30px 30px 30px;
 	min-height: 0;
+	justify-content: space-between;
 }
 
 .sf-gov .stats > div {
 	/*width: 250px;
 	text-align: center;*/
-	width: 450px;
+	/* width: 450px; */
 	text-align: left;
-	margin-left: 20px;
-
+	/* margin-left: 20px; */
 }
 
 .sf-gov .stats > div > div {
-	margin: 16px;
-	margin-left: 20px;
+	/* margin: 0 0 0 16px; */
+	/* margin-left: 20px; */
+	font-size: 15px;
+	line-height: 22px;
 }
 
 .sf-gov .stats h4 {
 	font-size: 16px;
-	margin-bottom: 29px;
+	margin-bottom: 14px;
 	text-align: left;
-	margin-left: 20px;
+	/* margin-left: 20px; */
+}
+
+.sf-gov .stats > div h4 {
+	margin-top: 27px;
 }
 
 .sf-gov .mission {
@@ -98,7 +104,7 @@
 	font-size: 19px;
 	line-height: 40px;
 	letter-spacing: 0.02em;
-	padding: 90px 45px 90px 35px;
+	padding: 90px 45px 90px 30px;
 }
 
 .sf-gov .mission .title {
@@ -134,7 +140,8 @@
 	font-size: 19px;
 	line-height: 40px;
 	letter-spacing: 0.02em;
-	padding: 90px 45px 90px 35px;
+	padding: 40px 45px 60px 35px;
+	line-height: 16px;
 }
 
 .sf-gov .target .title {
@@ -154,16 +161,15 @@
 	width: 279px;
 	box-sizing: border-box;
 	flex-shrink: 0;
-
 	/*font-size: 22px;
 	line-height: 40px;
 	letter-spacing: 0.02em;
 	font-weight: 600;
 	margin-bottom: 8px;*/
+	margin-bottom: 10px;
 }
 
-.sf-gov .target p {
-}
+.sf-gov .target p {font-size: 16px;line-height: 25px;}
 
 .sf-gov .user {
 	/*flex-grow: 1;*/
@@ -234,12 +240,12 @@
 	font-size: 16px;
 	line-height: 35px;
 	letter-spacing: 0.02em;
-	padding: 36px 170px;
+	padding: 0px 30px 20px;
 }
 
 .sf-gov .info {
 	background-color: rgb(238, 244, 247);
-	padding: 1px 170px 78px;
+	padding: 1px 30px 48px;
 }
 
 .sf-gov .info h3 {
@@ -286,26 +292,25 @@
 	padding: 20px 50px;
 }
 
-.sf-gov .problem-solution strong{
+.sf-gov strong{
 	font-weight: bold;
 
 }
 .sf-gov .problem-solution {
 	/*padding: 10px 92px;*/
-	padding: 10px 0px;
-
+	padding: 10px 30px 10px 30px;
 }
 
 .sf-gov .problem-solution > div {
 	display: flex;
 	/*margin: 40px 0;*/
-	margin: 20px 0;
+	margin: 20px 0 30px;
 }
 
 .sf-gov .problem-solution .header {
 	display: inline-block;
 	font-weight: 500;
-	font-size: 22px;
+	font-size: 18px;
 	line-height: 29px;
 	letter-spacing: 0.04em;
 	width: 279px;
@@ -315,7 +320,7 @@
 
 .sf-gov .problem-solution .body {
 	flex-grow: 1;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 35px;
 	letter-spacing: 0.03em;
 }
@@ -398,8 +403,9 @@
 }
 
 .sf-gov p.conclusion {
-	font-weight: 300;
-	font-size: 18px;
+	/* font-weight: 300; */
+	font-size: 16px;
+	/* line-height: 31px; */
 }
 
 .sf-gov .process {
@@ -481,4 +487,18 @@
 .sf-gov .testing .test .reflect {
 	top: 100%;
 	position: absolute;
+}
+
+.sf-gov .style-guide {padding: 0 30px;}
+
+.sf-gov .style-guide h3 {
+	font-size: 20px;
+	color: #477da7;
+	margin: 30px;
+}
+
+.sf-gov .style-guide img {
+	max-width: 80%;
+	display: block;
+	margin: 0 auto 60px;
 }

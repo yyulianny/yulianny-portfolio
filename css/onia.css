@@ -15,6 +15,7 @@
 	position: relative;
 	font-family: Open Sans;
 	padding: 0 20px;
+	/* background-color: red; */
 }
 
 .onia > .logo-buffer {height: 480px;}
@@ -408,8 +409,8 @@
 	margin-bottom: 23px;
 }
 
-.onia .persona {
-}
+.onia .persona {max-width: 73% !important;display: block;margin: auto;}
+.onia .right {/* padding-left: 113px; */margin-top: -2px !important;}
 
 .onia .stats {
 	font-size: 16px;
@@ -500,7 +501,7 @@
 }
 
 .onia > p {
-	font-size: 18px;
+	/* font-size: 18px; */
 	line-height: 30px;
 	letter-spacing: 0.02em;
 	/* padding: 26px 0px 26px 20px; */
