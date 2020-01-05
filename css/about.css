@@ -4,7 +4,6 @@
 }
 
 .about .details {
-	/* padding: 37px 47px 33px 30px; */
 	box-sizing: border-box;
 	font-family: Rajdhani, sans-serif;
 }
@@ -42,6 +41,8 @@
 .about p {
 	line-height: 25px;
 	letter-spacing: 1px;
+	font-family: Open Sans;
+	padding: 0 20px;
 }
 
 .about em {
@@ -54,6 +55,7 @@
 	text-decoration: none;
 }
 
-.about-header {
-	/* padding-bottom: 0; */
+
+.about a:hover {
+	color: #b1b1b1;
 }

@@ -1,5 +1,48 @@
 .project-container > .logo {
 	background-image: url(../img/photo-HeroImg.png);
-	background-size: contain;
+	background-size: cover;
 	background-color: #fff;
+	background-position: center;
+	width: 100%;
+	left: 0;
+}
+
+#photo {
+	padding: 0;
+	clear: both;
+}
+
+#photo img {
+	width: 515px;
+	margin-bottom: 30px;
+	margin-right: 30px;
+	vertical-align: top;
+	float: left;
+}
+
+#photo .tall {
+	height: 733px;
+}
+
+#photo .short {
+	height: 352px;
+}
+
+#photo .full {
+	width: calc(100% - 30px);
+	margin: 0 0 30px 0;
+	clear: both;
+	float: none;
+}
+
+#photo .photos {
+	font-size: 0;
+	width: 1090px;
+	position: relative;
+}
+
+#photo .abs {
+	position: absolute;
+	top: 2672px;
+	left: 0;
 }

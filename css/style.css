@@ -29,8 +29,8 @@ nav > a {
 	text-decoration: none;
 	color: #575757;
 	font-family: Rajdhani, sans-serif;
-	/*text-transform: uppercase;*/
-	text-transform: none;
+	text-transform: uppercase;
+	/* text-transform: none; */
 	font-size: 20px;
 	font-weight: 500;
 	margin-left: 20px;
@@ -101,7 +101,7 @@ h1 {
 
 .billboard {
 	margin: 0;
-	height: 360px;
+	/* height: 360px; */
 	font-family: Rajdhani, sans-serif;
 	min-height: 0;
 	border-bottom: 2px solid #efefef;
@@ -121,7 +121,7 @@ h1 {
 	font-weight: 300;
 	line-height: 43px;
 	margin-bottom: 20px;
-	padding-right: 400px;
+	padding-right: 340px;
 	padding-left: 20px;
 }
 
@@ -379,24 +379,28 @@ span.details {}
 	background-color: #fafafa;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 }
 
 .project.photography .details {
-	background-color: #066E7B;
+	background-color: #804e72;
 }
 
 
 .project.collect {
 	background-image: url(../img/h-collection.png);
-	background-color: #fafafa;
+	background-color: #fff;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+	width: 767px;
+	/* height: 400px; */
+	display: block;
+	margin: auto;
 }
 
 .project.collect .details {
-	background-color: #066E7B;
+	background-color: #5d5f55;
 }
 
 
@@ -741,6 +745,7 @@ footer div {
 .dropdown ul li a {
 	text-decoration: none;
 	color: white;
+	text-transform: none;
 }
 
 .dropdown ul li:hover {
