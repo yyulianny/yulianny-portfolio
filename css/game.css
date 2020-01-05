@@ -58,7 +58,8 @@
 
 .project-container h3 {
 	text-align: left;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
+	text-transform: capitalize;
 	color: #4F4F4F;
 	font-size: 30px;
 	font-weight: 600;

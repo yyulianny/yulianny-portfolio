@@ -9,4 +9,11 @@
 .project-container h1,
 .project-container h3 {
 	color: #FF3574;
+  text-transform: none;
 }
+
+/*
+.project-container h2 {
+  color: #FF3574;
+  text-transform: lowercase;
+}*/

@@ -1,0 +1,5 @@
+.project-container > .logo {
+	background-image: url(../img/c-HeroImg.png);
+	background-size: contain;
+	background-color: #fff;
+}

@@ -29,7 +29,8 @@ nav > a {
 	text-decoration: none;
 	color: #575757;
 	font-family: Rajdhani, sans-serif;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
+	text-transform: none;
 	font-size: 20px;
 	font-weight: 500;
 	margin-left: 20px;
@@ -88,6 +89,7 @@ h1 {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 36px;
+	font-width: 500px;
 	
 /* or 150% */
 	letter-spacing: -0.02em;
@@ -373,7 +375,7 @@ span.details {}
 
 
 .project.photography {
-	background-image: url(../img/photo-HeroImg.png);
+	background-image: url(../img/h-photo.png);
 	background-color: #fafafa;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -383,6 +385,21 @@ span.details {}
 .project.photography .details {
 	background-color: #066E7B;
 }
+
+
+.project.collect {
+	background-image: url(../img/h-collection.png);
+	background-color: #fafafa;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.project.collect .details {
+	background-color: #066E7B;
+}
+
+
 
 
 
