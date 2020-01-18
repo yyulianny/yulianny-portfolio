@@ -1,5 +1,71 @@
 .project-container > .logo {
-	background-image: url(../img/c-HeroImg.png);
-	background-size: contain;
-	background-color: #fff;
+  background-image: url(../img/c-HeroImg.png);
+  background-size: contain;
+  background-color: #fff;
+  background-size: cover;
+  height: 585px;
+}
+
+.collection h2 {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: Open Sans;
+  text-transform: capitalize;
+  color: #4F4F4F;
+  margin: 140px 0 40px 0;
+  padding: 0;
+}
+
+.collection .video {
+  flex-grow: 1;
+  background-color: #b2d5e8;
+}
+
+.gallery.sketches.brand .image {
+  background-size: contain;
+}
+
+.collection .gallery.poster {
+  /* background-color: #E0E0E0; */
+  /* padding: 20px 0; */
+}
+
+.collection .gallery.poster,
+.collection .gallery.store,
+.collection .gallery.packaging,
+.collection .gallery.sketching {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.collection .gallery.poster .image,
+.collection .gallery.store .image,
+.collection .gallery.packaging .image,
+.collection .gallery.sketching .image {
+  width: 49%;
+  background-size: cover;
+}
+
+.collection .gallery.poster .image {
+  height: 755px;
+  border: 1px solid #8c8c8c;
+}
+
+.collection .gallery.store .image {
+  height: 540px;
+  background-size: contain;
+}
+
+.collection .gallery.packaging .image {
+  height: 490px;
+  margin-bottom: 18px;
+}
+
+.collection .gallery.packaging .image.full {
+  width: 100%;
+}
+
+.collection .gallery.sketching .image {
+  height: 490px;
+  margin-bottom: 17px;
 }

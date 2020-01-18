@@ -391,12 +391,15 @@ span.details {}
 	background-image: url(../img/h-collection.png);
 	background-color: #fff;
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	width: 767px;
-	/* height: 400px; */
-	display: block;
-	margin: auto;
+	background-position: cover;
+	/*background-size: contain;*/
+	width: 100%;
+	left: 0;
+	/*width: 767px;*/
+	height: 530px;
+	/*display: block;*/
+	/*margin: auto;*/
+	background-size: cover;
 }
 
 .project.collect .details {
@@ -755,4 +758,8 @@ footer div {
 .dropdown:hover ul {
 	display: block;
 	/*opacity: 1;*/
+}
+
+.contain {
+	background-size: contain !important;
 }

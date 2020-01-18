@@ -1,6 +1,7 @@
 .about {
 	background-size: cover;
 	background-position: center;
+	/* background-color: red; */
 }
 
 .about .details {
@@ -8,8 +9,44 @@
 	font-family: Rajdhani, sans-serif;
 }
 
-.about .image {
+.about .sketches .image {
 	flex-grow: 1;
+	height: 200px;
+	width: 230px;
+	display: inline-block;
+	background-size: cover;
+	margin: 8px;
+}
+
+.about .sketches .image:nth-child(1) {
+	height: 500px;
+	width: 500px;
+	background-position-y: -44px;
+	/* background-size: contain; */
+}
+
+.about .sketches .image:nth-child(2) {
+	
+}
+
+.about .sketches .image:nth-child(3) {
+	/* height: 100px; */
+}
+
+.about .sketches .image:nth-child(4) {
+	position: absolute;
+	top:  0;
+	left: 540px;
+	width: 481px;
+	height: 280px;
+	background-size: cover;
+	background-position-y: -120px;
+}
+
+.image {}
+
+.about .project-container .sketches {
+	display: block;
 }
 
 .about h3 {
@@ -39,10 +76,20 @@
 }
 
 .about p {
-	line-height: 25px;
+	line-height: 30px;
 	letter-spacing: 1px;
 	font-family: Open Sans;
-	padding: 0 20px;
+	font-weight: 300;
+	/*padding: 0 20px;*/
+	padding-right: 340px;
+	padding-left: 20px;
+
+	/*font-family: Open Sans;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 43px;*/
+	margin-bottom: 20px;
+	
 }
 
 .about em {
@@ -58,4 +105,8 @@
 
 .about a:hover {
 	color: #b1b1b1;
+}
+
+.about .contact-link {
+	margin-bottom: 0;
 }

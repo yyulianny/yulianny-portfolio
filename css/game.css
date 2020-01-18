@@ -9,6 +9,7 @@
 	height: 435px;
 	left: -20px;
 	background-color: #000;
+	/* background-position: center; */
 }
 
 .project-container {
@@ -117,6 +118,21 @@
 	box-sizing: border-box;
 	padding: 20px 38px;
 	line-height: 26px;
+}
+
+.play-it {
+	  text-align: left;
+	  text-decoration: none;
+	  /* text-transform: uppercase; */
+	  text-transform: capitalize;
+	  color: #4F4F4F;
+	  font-size: 30px;
+	  font-weight: 600;
+	  /* margin-top: 50px; */
+	  line-height: 1em;
+	  /* margin-bottom: 20px; */
+	  text-align: right;
+	  display: block;
 }
 
 
