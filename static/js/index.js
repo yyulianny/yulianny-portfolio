@@ -55,7 +55,7 @@ $next.click(function(e){
 
 var loadImage = function() {
 	$image.fadeOut(function(){
-		$image.attr('src', './img/' + images[0]);
+		$image.attr('src', '/static/img/' + images[0]);
 		$image.fadeIn();
 	})
 }

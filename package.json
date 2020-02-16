@@ -1,0 +1,29 @@
+{
+  "name": "yulianny-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crono9997/yulianny-portfolio.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crono9997/yulianny-portfolio/issues"
+  },
+  "homepage": "https://github.com/crono9997/yulianny-portfolio#readme",
+  "scripts": {
+    "start": "forever app.js",
+    "dev": "nodemon --inspect app.js"
+  },
+  "author": "",
+  "dependencies": {
+    "ejs": "latest",
+    "express": "latest",
+    "forever": "latest",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  }
+}

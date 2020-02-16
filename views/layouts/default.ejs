@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147739844-1"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+
+       gtag('config', 'UA-147739844-1');
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/fav/favicon-16x16.png">
+    <link rel="manifest" href="/static/site.webmanifest">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700,900|Roboto:300,400,500,600,700,900|Open+Sans:300,400,500,600,700,900|Rubik:300,400,500,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <% for (let i = 0; i < styles.length; i++) {
+      let style = styles[i];
+      if (style.indexOf('http') === -1) {
+        style = '/static/css/' + style;
+      }
+    %>
+      <link rel="stylesheet" type="text/css" href="<%= style %>">
+    <% } %>
+  </head>
+  <body>
+    <main>
+      <%- include('../header') %>
+      <%- include('../' + contentView) %>
+    </main>
+    <%- include('../footer') %>
+    <div class="lightbox">
+      <div class="prev"></div>
+      <img class="image" />
+      <div class="next"></div>
+      <div class="close"></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="/static/js/index.js"></script>
+    <% for (let i = 0; i < scripts.length; i++) {
+      let script = scripts[i];
+      if (script.indexOf('http') === -1) {
+        script = '/static/js/' + script;
+      }
+    %>
+      <script src="<%= script %>"></script>
+    <% } %>
+  </body>
+</html>
