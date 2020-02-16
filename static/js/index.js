@@ -1,121 +1,99 @@
-var $lightBox = $('.lightbox');
-var $next = $lightBox.find('.next');
-var $prev = $lightBox.find('.prev');
-var $close = $lightBox.find('.close');
-var $image = $lightBox.find('.image');
-var $body = $('html, body');
+(function(window, $) {
+	var $lightBox = $('.lightbox');
+	var $next = $lightBox.find('.next');
+	var $prev = $lightBox.find('.prev');
+	var $close = $lightBox.find('.close');
+	var $image = $lightBox.find('.image');
+	var $body = $('html, body');
+	var $html = $('html');
+	var $main = $('main');
 
-var images = [];
+	var images = [];
 
-$('.gallery').each(function() {
-	var $gallery = $(this);
+	$('.gallery').each(function() {
+		var $gallery = $(this);
+		var $images = $gallery.find('.image');
+		var galleryImages = $images.map(function() {
+			return $(this).data('image') || $(this).attr('src').split('img/').pop();
+		}).get();
 
-	var $images = $gallery.find('.image');
+		$images.click(function() {
+			var index = $images.index($(this));
+			images = galleryImages.slice();
+			images = images.splice(index).concat(images)
 
-	var galleryImages = $images.map(function() {
-		return $(this).data('image') || $(this).attr('src').split('img/').pop();
-	}).get();
-
-	$images.click(function() {
-		// console.log($image);
-		// console.log('url(./img/' + $(this).data('image') + ');');
-		// $image.css({
-		// 	'background-image': 'url(./img/' + $(this).data('image') + ')'
-		// });
-
-		var index = $images.index($(this));
-		console.log(index);
-		images = galleryImages.slice();
-		console.log(images);
-		images = images.splice(index).concat(images)
-		console.log(images);
-
-		loadImage();
-		$lightBox.fadeIn();
+			loadImage();
+			$lightBox.fadeIn();
+		});
 	});
-});
 
-$lightBox.click(function() {
-	$lightBox.fadeOut(function(){
-		$image.hide();
-	});
-})
-
-$image.click(function(e){e.stopPropagation()})
-$prev.click(function(e){
-	e.stopPropagation();
-	images.unshift(images.pop());
-	loadImage();
-})
-$next.click(function(e){
-	e.stopPropagation();
-	images.push(images.shift());
-	loadImage();
-})
-
-var loadImage = function() {
-	$image.fadeOut(function(){
-		$image.attr('src', '/static/img/' + images[0]);
-		$image.fadeIn();
+	$lightBox.click(function() {
+		$lightBox.fadeOut(function(){
+			$image.hide();
+		});
 	})
-}
 
-// Carousel
+	$image.click(function(e){e.stopPropagation()})
+	$prev.click(function(e){
+		e.stopPropagation();
+		images.unshift(images.pop());
+		loadImage();
+	})
+	$next.click(function(e){
+		e.stopPropagation();
+		images.push(images.shift());
+		loadImage();
+	})
 
-var $carousel = $('#carousel');
-var $cArrowNext = $('.carousel-arrow.next');
-var $cArrowPrev = $('.carousel-arrow.prev');
+	var loadImage = function() {
+		$image.fadeOut(function(){
+			$image.attr('src', '/static/img/' + images[0]);
+			$image.fadeIn();
+		})
+	}
 
-$cArrowNext.click(function() {
-	$carousel.animate({
-		scrollLeft: '+=268'
-	}, 300);
-});
+	function setFixed() {
+		$main.toggleClass('fixed', $html.scrollTop() >= 54);
+	};
 
-$cArrowPrev.click(function() {
-	$carousel.animate({
-		scrollLeft: '-=268'
-	}, 300);
-});
+	setFixed();
 
-var $curProject = $carousel.find('.project').filter(function(i, el) {
-  return $(el).attr('href') === location.pathname;
-});
+	function throttle(fn, wait) {
+	  var time = Date.now();
+	  return function() {
+	    if ((time + wait - Date.now()) < 0) {
+	      fn();
+	      time = Date.now();
+	    }
+	  }
+	}
 
-$curProject.addClass('current');
-$carousel.scrollLeft($carousel.scrollLeft() + $curProject.position().left - $carousel.width()/2 + $curProject.width()/2)
+	$(window).on('scroll', throttle(setFixed, 50));
 
+	// Carousel
 
+	var $carousel = $('#carousel');
+	if (!$carousel.length) return;
 
+	var $cArrowNext = $('.carousel-arrow.next');
+	var $cArrowPrev = $('.carousel-arrow.prev');
 
+	$cArrowNext.click(function() {
+		$carousel.animate({
+			scrollLeft: '+=268'
+		}, 300);
+	});
 
+	$cArrowPrev.click(function() {
+		$carousel.animate({
+			scrollLeft: '-=268'
+		}, 300);
+	});
 
+	var $curProject = $carousel.find('.project').filter(function(i, el) {
+	  return $(el).attr('href') === location.pathname;
+	});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $('.project-link').click(function(e){
-// 	e.preventDefault();
-
-// 	$body.stop().animate({
-// 		scrollTop:$($(this).attr('href')).position().top - 200
-// 	}, 500, 'swing');
-// })
+	$curProject.addClass('current');
+	$carousel.scrollLeft($carousel.scrollLeft() + $curProject.position().left - $carousel.width()/2 + $curProject.width()/2)
+})(window, jQuery);
