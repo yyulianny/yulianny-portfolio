@@ -1,0 +1,144 @@
+.carousel {
+	padding-top: 81px;
+	/* background: red; */
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	border-top: 2px solid #efefef;
+	overflow-x: auto;
+	margin-bottom: -20px;
+	-webkit-overflow-scrolling: touch;
+	margin-top: 60px;
+}
+
+.carousel .project {
+	width:  250px;
+	height: 200px;
+	display: inline-block;
+	font-size: 0;
+	margin: 0 7px 20px;
+	white-space: normal;
+	border: 1px solid #e0e0e0;
+	/* opacity: 0.5; */
+	transition: border 0.2s;
+	padding:  0;
+}
+
+.carousel .project.current {
+	border: 5px solid #E25C68;
+	top: -4px;
+	position: relative;
+}
+
+.carousel .project:hover {
+	
+}
+
+.carousel .project:first-child {
+	margin-left: 0;
+}
+
+.carousel .project:last-child {
+	margin-right: 0;
+}
+
+.carousel .project .details {
+	font-size: 13px;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	width:  100%;
+}
+
+.carousel .project .title {
+	font-size: 24px;
+}
+
+.carousel .project .sub-title {
+	font-size: 18px;
+	margin: 0;
+}
+
+.carousel .project .categories {
+	position: absolute;
+	width: calc(100% - 40px);
+	bottom: 20px;
+	font-weight: 500;
+}
+
+.carousel-arrow-container {
+	position: relative;
+	margin-top: 60px;
+}
+
+.carousel-arrow {
+	color: #E25C68;
+	font-size: 18px;
+	font-weight: 700;
+	position: absolute;
+	font-family: Open Sans;
+	height:  200px;
+	width: 25px;
+	text-align: center;
+	line-height: 200px;
+	transition: background-color 0.2s, color 0.2s;
+	top:  83px;
+}
+
+.carousel-arrow:hover {background-color: #E25C68;color:  #fff;}
+
+.carousel-arrow.prev {
+	left: -26px;
+}
+
+.carousel-arrow.next {
+	left: 1061px;
+}
+
+.carousel-arrow.prev:before {
+	content: "<";
+}
+
+.carousel-arrow.next:before {
+	content: ">";
+}
+
+.project.mm.current {
+	border-color: #4285F4;
+}
+.project.sf.current {
+	border-color: #1C3E57;
+}
+.project.pc.current {
+	border-color: #747A4A;
+}
+.project.onia.current {
+	border-color: #691834;
+}
+.project.blalb.current {
+	border-color: #655397;
+}
+.project.mall.current {
+	border-color: #FF3574;
+}
+.project.d.current {
+	border-color: #972546;
+}
+.project.g.current {
+	border-color: #066E7B;
+}
+.project.terra.current {
+	border-color: #bf7e11;
+}
+.project.pbc.current {
+	border-color: #757344;
+}
+.project.burmese.current {
+	border-color: #580e10;
+}
+.project.photography.current {
+	border-color: #804e72;
+}
+.project.collect.current {
+	border-color: #5d5f55;
+}

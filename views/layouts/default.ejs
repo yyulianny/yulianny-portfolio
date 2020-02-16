@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700,900|Roboto:300,400,500,600,700,900|Open+Sans:300,400,500,600,700,900|Rubik:300,400,500,600,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/carousel.css">
     <% for (let i = 0; i < styles.length; i++) {
       let style = styles[i];
       if (style.indexOf('http') === -1) {
@@ -32,6 +33,10 @@
     <main>
       <%- include('../header') %>
       <%- include('../' + contentView) %>
+
+      <% if (contentView != 'index') { %>
+        <%- include('../carousel') %>
+      <% } %>
     </main>
     <%- include('../footer') %>
     <div class="lightbox">

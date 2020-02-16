@@ -60,6 +60,58 @@ var loadImage = function() {
 	})
 }
 
+// Carousel
+
+var $carousel = $('#carousel');
+var $cArrowNext = $('.carousel-arrow.next');
+var $cArrowPrev = $('.carousel-arrow.prev');
+
+$cArrowNext.click(function() {
+	$carousel.animate({
+		scrollLeft: '+=268'
+	}, 300);
+});
+
+$cArrowPrev.click(function() {
+	$carousel.animate({
+		scrollLeft: '-=268'
+	}, 300);
+});
+
+var $curProject = $carousel.find('.project').filter(function(i, el) {
+  return $(el).attr('href') === location.pathname;
+});
+
+$curProject.addClass('current');
+$carousel.scrollLeft($carousel.scrollLeft() + $curProject.position().left - $carousel.width()/2 + $curProject.width()/2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // $('.project-link').click(function(e){
 // 	e.preventDefault();
 

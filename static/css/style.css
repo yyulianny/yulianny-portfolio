@@ -89,13 +89,32 @@ h1 {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 36px;
-	font-width: 500px;
+	
 	
 /* or 150% */
 	letter-spacing: -0.02em;
 	text-transform: none;
 	background-color: white;
 	line-height: 20px;
+	margin-left: 0;
+	height: 30px;
+	position: relative;
+	top: -12px;
+}
+
+.yy:before {
+	content: '';
+	background-image: url('../fav/apple-touch-icon.png');
+	width: 50px;
+	height: 50px;
+	/* background-color: red; */
+	display: inline-block;
+	vertical-align: middle;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	top: -10px;
+	margin-right: 10px;
 }
 
 
