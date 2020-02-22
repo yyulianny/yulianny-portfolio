@@ -9,7 +9,11 @@ body {
 
 main {
 	width: 1060px;
-	margin: 81px auto;
+	margin: 81px auto 81px;
+}
+
+main.fixed {
+	margin-top: 151px;
 }
 
 section {
@@ -22,6 +26,27 @@ nav {
 	padding: 20px 0;
 	box-sizing: border-box;
 	display: flex;
+}
+
+main.fixed nav {
+	position: fixed;
+    top: 0;
+    width: 1060px;
+    padding-top: 50px;
+    background-color: #fff;
+    z-index: 1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+main.fixed nav:before {
+	background-color: #fff;
+	content: '';
+	position: absolute;
+	width: 198vw;
+	height:  100%;
+	top:  0;
+	left: -50vw;
+	z-index: -1;
 }
 
 nav .dropdown,
@@ -89,13 +114,32 @@ h1 {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 36px;
-	font-width: 500px;
+	
 	
 /* or 150% */
 	letter-spacing: -0.02em;
 	text-transform: none;
 	background-color: white;
 	line-height: 20px;
+	margin-left: 0;
+	height: 30px;
+	position: relative;
+	top: -12px;
+}
+
+.yy:before {
+	content: '';
+	background-image: url('../fav/apple-touch-icon.png');
+	width: 50px;
+	height: 50px;
+	/* background-color: red; */
+	display: inline-block;
+	vertical-align: middle;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	top: -10px;
+	margin-right: 10px;
 }
 
 
