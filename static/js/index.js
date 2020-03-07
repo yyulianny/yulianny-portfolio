@@ -12,7 +12,7 @@
 
 	$('.gallery').each(function() {
 		var $gallery = $(this);
-		var $images = $gallery.find('.image');
+		var $images = $gallery.find('.image, img');
 		var galleryImages = $images.map(function() {
 			return $(this).data('image') || $(this).attr('src').split('img/').pop();
 		}).get();

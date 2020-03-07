@@ -63,25 +63,27 @@
 	background-repeat: no-repeat;
 	cursor: pointer;
 	position: relative;
-	width: 33%;
-	height: 222px;
+	/* width: 33%; */
+	/* height: 222px; */
 }
 
 .pinecrest .gallery.sketches {
-	padding: 0px 160px 0px;
-	margin-top: 3px;
+	/* margin-top: 3px; */
+	width: 80%;
+	margin: 26px auto;
 }
 
 .pinecrest .gallery.sketches .image {
-	width: 29%;
+	/* width: 29%; */
 	height: 132px;
 	box-sizing: border-box;
 	/* background-size: 53%; */
-	margin: 60px 2% 0px;
+	/* margin: 60px 2% 0px; */
 }
 
 .pinecrest .gallery.sketches.brand {
     padding-top: 0;
+    margin-top: -9px;
 }
 .pinecrest .gallery.sketches.brand .image {background-size: 70%;height: 170px;margin-top: 20px;}
 
@@ -90,7 +92,7 @@
 }
 
 .pinecrest .gallery.protos .image {
-	width: 33%;
+	/* width: 33%; */
 	height: 292px;
 }
 
@@ -106,7 +108,8 @@
 }
 
 .pinecrest .gallery.photos .image {
-	width: 33%;
+	width: 33.33333%;
+	margin: 0;
 	height: 233px;
 	background-size: cover;
 }

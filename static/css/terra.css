@@ -2,3 +2,14 @@
 	background-image: url(../img/t-HeroImg.png);
 	background-size: 102%;
 }
+
+.sketches {
+
+}
+
+#terra .sketches > img {
+	margin: 0;
+	width:  50%;
+}
+
+#terra .products > img{object-fit: cover;}

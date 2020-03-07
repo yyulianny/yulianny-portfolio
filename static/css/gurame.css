@@ -9,3 +9,24 @@
 .project-container h3 {
 	color: #066E7B;
 }
+
+.project-container h3 {
+	margin-top: 80px;
+}
+
+
+.fishes > img {
+	max-height: 160px;
+}
+
+.treasure > img {
+	max-height: 160px;
+}
+
+.access > img {
+	max-height: 268px;
+}
+
+.icon > img {
+	max-height: 148px;
+}

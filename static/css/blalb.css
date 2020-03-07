@@ -10,3 +10,19 @@
 .project-container h3 {
 	color: #655397;
 }
+
+.project-container .enemies {
+
+}
+
+.project-container .enemies > img {
+	max-height: 240px;
+}
+
+.project-container .enemies-2 > img {
+	max-height: 260px;
+}
+
+.project-container .enemies-3 > img {
+	max-height: 150px;
+}

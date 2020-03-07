@@ -103,6 +103,14 @@ main > .onia {
 	margin: 60px 2% 0px;
 }
 
+.onia .branding > img {
+	max-height: 335px;
+}
+
+.onia .branding > img:first-child {
+	max-height: 255px;
+}
+
 .onia .gallery.sketches.brand {
     padding-top: 0;
 }
@@ -141,6 +149,17 @@ main > .onia {
 	width: calc(100% + 40px);
 	position: relative;
 	left: -20px;
+}
+
+.onia .prototypes {
+    background-color: #691335;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.onia .prototypes > img {
+	max-height: 410px;
 }
 
 
@@ -365,6 +384,16 @@ main > .onia {
 }
 
 .onia .persona {
+}
+
+.onia .personas {
+	/* padding: 0 80px; */
+	width: 80%;
+	margin: auto;
+}
+
+.onia .personas > img {
+	max-height: 330px;
 }
 
 .onia .story-board {
