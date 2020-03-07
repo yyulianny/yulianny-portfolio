@@ -21,6 +21,11 @@
   background-color: #b2d5e8;
 }
 
+.gallery.sketches.brand {
+  width: 80%;
+  margin: auto;
+}
+
 .gallery.sketches.brand .image {
   background-size: contain;
 }
@@ -42,13 +47,15 @@
 .collection .gallery.store .image,
 .collection .gallery.packaging .image,
 .collection .gallery.sketching .image {
-  width: 49%;
+  /* width: 49%; */
   background-size: cover;
 }
 
 .collection .gallery.poster .image {
   height: 755px;
   border: 1px solid #8c8c8c;
+  background-color: white;
+  box-sizing: border-box;
 }
 
 .collection .gallery.store .image {

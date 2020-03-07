@@ -13,6 +13,10 @@
   text-transform: none;
 }
 
+.characters > img {
+	max-height: 360px;
+}
+
 /*
 .project-container h2 {
   color: #FF3574;
