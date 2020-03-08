@@ -20,3 +20,10 @@
   width: 75%;
   margin: auto;
 }
+
+@media screen and (max-width:1059px) {
+  .logo {
+    background-position: center !important;
+  }
+
+}

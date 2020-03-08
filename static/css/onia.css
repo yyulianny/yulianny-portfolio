@@ -200,7 +200,7 @@ main > .onia {
 
 .onia .sketches div {width: 100%;padding: 130px 30px;line-height: 29px;}
 
-.onia .sketches div.image {background-image: url(../img/O-sketch.jpg);background-size: contain;background-position: center;}
+.onia .sketches div.image {background-image: url(../img/O-sketch.jpg);background-size: contain;background-position: center;background-repeat: no-repeat;background-color: #000;}
 
 .onia .border {
 	border: 1px solid #691734;
@@ -603,4 +603,53 @@ main > .onia {
 .onia .problem-solution li {
 	list-style: initial;
 	margin-left: 19px;
+}
+
+.onia .mvp {/* height: 230px; */margin-top: 30px;}
+
+.onia .mvp > img {margin:  0;height: 100%;object-fit: fill;width: 25%;}
+
+@media screen and (max-width:1059px) {
+	.onia > .logo {
+		background-position-x: 0;
+	}
+
+
+	.onia .flex.even p {
+		width: 100%
+	}
+
+	.onia .personas {
+		width: 100%;
+	}
+
+	.onia .sketches {
+		height: auto;
+	}
+
+	.onia .sketches > div {
+		padding: 20px;
+	}
+
+	.onia .sketches .image {
+	width:  100%;
+	height:  0;
+	padding-top: 80%;
+	}
+
+	.onia .prototypes {padding: 40px 0;}
+	
+	.onia .sketches {
+		border: none;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.onia .mvp > img {
+		width: 50%;
+		height: 100%;
+	}
+
+	.onia .wireframes > img,
+	.onia .comparative > img {margin-left: 20%;width: calc(80% - 40px);width: calc(8 - 40px);}
 }

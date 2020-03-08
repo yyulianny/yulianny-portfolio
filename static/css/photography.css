@@ -50,3 +50,20 @@
 	top: 2672px;
 	left: 0;
 }
+@media screen and (max-width:1059px) {
+	#photo .photos {
+		width: 100%;
+		padding-left: 20px;
+	}
+
+	#photo img {
+		width: calc(100% - 40px) !important;
+		height: auto !important;
+		position: relative !important;
+		float: none !important;
+		right: 0 !important;
+		top:  0 !important;
+	}
+
+}
+

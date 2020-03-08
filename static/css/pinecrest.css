@@ -505,3 +505,41 @@
 	list-style: initial;
 	margin-left: 19px;
 }
+
+@media screen and (max-width:1059px) {
+	.video iframe,
+	.video {
+		width: 100%;
+		height: 360px;
+	}
+
+	.pinecrest .problem-solution {padding: 10px 20px;}
+	.pinecrest > p {
+		padding: 26px 20px;
+	}
+
+	.pinecrest .info {
+		padding: 1px 20px 48px;
+	}
+
+	.pinecrest .gallery.photos .image {
+		width: calc(50% - 40px);
+	    height:  0;
+	}
+
+	.photos .image {
+	    padding-top: 30%;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.pinecrest .gallery.photos .image {
+		width: calc(100% - 40px);
+	    height:  0;
+	}
+	.photos .image {
+	    padding-top: 62%;
+	}
+}
+
+

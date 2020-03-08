@@ -17,6 +17,13 @@
 	max-height: 360px;
 }
 
+@media screen and (max-width:1059px) {
+	.t-fill {
+		padding-top: 80%;
+	}
+
+}
+
 /*
 .project-container h2 {
   color: #FF3574;

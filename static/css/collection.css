@@ -58,6 +58,11 @@
   box-sizing: border-box;
 }
 
+.collection .gallery.poster img {
+  border: 1px solid #8c8c8c;
+  box-sizing: border-box;
+}
+
 .collection .gallery.store .image {
   height: 540px;
   background-size: contain;
@@ -75,4 +80,15 @@
 .collection .gallery.sketching .image {
   height: 490px;
   margin-bottom: 17px;
+}
+
+@media screen and (max-width:1059px) {
+  .video {
+    width: 100%;
+  }
+
+  .video iframe {
+    width: 100%;
+  }
+
 }
