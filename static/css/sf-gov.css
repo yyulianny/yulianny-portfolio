@@ -468,6 +468,7 @@
 
 .sf-gov .testing {
 	height: 410px;
+	margin-top: 50px;
 }
 
 .sf-gov .testing .test .reflect-bg {
@@ -501,4 +502,64 @@
 	max-width: 80%;
 	display: block;
 	margin: 0 auto 60px;
+}
+
+@media screen and (max-width:1059px) {
+	.testing {
+		width: 100%;
+	}
+
+	.sf-gov .stats > div {
+		width: 100%;
+	}
+
+	.sf-gov .video iframe,
+	.sf-gov .video {
+		width: 100%;
+	}
+
+	.sf-gov .problem-solution > div {
+		flex-wrap: wrap;
+	}
+
+	.sf-gov .item {
+		width: 100%;
+		text-align: center !important;
+	}
+
+	.sf-gov .item .image {
+		text-align: center;
+		display: inline-block;
+	}
+
+	.sf-gov .item .title {
+		text-align: center;
+	}
+
+	.sf-gov .cell {
+		width: 100%;
+		padding: 0px 20px 20px;
+	}
+
+	.sf-gov .cell .image {
+		width: 100%;
+		margin: 10px 0;
+		height:  0;
+		padding-top: 76%;
+		background-size: cover;
+	}
+
+	.comparative {
+		padding: 0 20px;
+	}
+
+	.sf-gov h3.center {
+		text-align: center;
+		margin: 72px 0 30px;
+	}
+
+}
+
+@media screen and (max-width:600px) {
+	
 }
