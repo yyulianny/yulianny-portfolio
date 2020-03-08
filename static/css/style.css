@@ -886,11 +886,15 @@ background-size: contain !important;
 	}
 
 	.t-hide {
-		display: none;
+		display: none !important;
 	}
 
 	.t-show {
 		display: block;
+	}
+
+	.gallery.t-show {
+		display: flex;
 	}
 }
 

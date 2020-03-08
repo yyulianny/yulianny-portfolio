@@ -110,3 +110,43 @@
 .about .contact-link {
 	margin-bottom: 0;
 }
+
+.sketches-2 img {
+	height: 420px;
+	object-fit: cover;
+}
+
+@media screen and (max-width:1059px) {
+	.about .details {width: 100%;}
+
+	.about h3 {
+		padding: 50px 40% 20px 20px;
+		font-size: 22px;
+		line-height: 33px;
+	}
+
+	.about p {
+		padding: 0 20px;
+	}
+
+	.about .image {
+		width:  100% !important;
+		position: relative !important;
+		left: 0 !important;
+		height: 520px !important;
+		/* background-size: contain !important; */
+	}
+
+	.about .image:first-child {
+		height: 640px !important;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.sketches-2 img {
+		height: auto;
+		object-fit: contain;
+	}
+}
+
+
