@@ -22,11 +22,12 @@
 	/* opacity: 0.5; */
 	transition: border 0.2s;
 	padding:  0;
+	vertical-align: middle;
 }
 
 .carousel .project.current {
-	border: 5px solid #E25C68;
-	top: -4px;
+/*	border: 5px solid #E25C68;
+	top: -4px;*/
 	position: relative;
 }
 

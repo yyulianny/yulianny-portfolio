@@ -121,6 +121,7 @@ h1 {
 	/* box-sizing: border-box; */
 	margin: 20px;
 	object-fit: contain;
+	height: min-intrinsic;
 }
 
 .gallery.col-2 > img,
