@@ -10,8 +10,13 @@
   height: 390px;
   flex-shrink: 0;
   flex-grow: 0;
-  width: 48%;
+  /* width: 48%; */
   background-size: cover;
   background-position: center;
   margin-bottom: 14px;
+}
+
+.pbc .gallery.brand {
+  width: 75%;
+  margin: auto;
 }

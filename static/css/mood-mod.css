@@ -25,15 +25,16 @@
 }
 
 .mood-mod .gallery.sketches .image {
-	width: 25%;
-	height: 286px;
-	background-size: 53%;
+	/* width: 25%; */
+	height: 316px;
+	background-size: 63%;
 }
 
 .mood-mod .gallery.prototype .image {
-	width: 20%;
+	/* width: 20%; */
 	height: 345px;
-	background-size: 70%;
+	background-size: 82%;
+	background-position: 33px 23px;
 }
 
 .mood-mod .logic p {

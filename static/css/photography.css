@@ -14,10 +14,12 @@
 
 #photo img {
 	width: 515px;
+	margin: 0;
 	margin-bottom: 30px;
 	margin-right: 30px;
 	vertical-align: top;
 	float: left;
+	object-fit: initial;
 }
 
 #photo .tall {
@@ -39,6 +41,8 @@
 	font-size: 0;
 	width: 1090px;
 	position: relative;
+	display: block;
+	margin: auto;
 }
 
 #photo .abs {

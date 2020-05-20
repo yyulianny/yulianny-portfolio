@@ -9,4 +9,10 @@
 	color: #972546;
 }
 
+.stash > img {
+	max-height: 200px;
+}
 
+.enemies > img {
+	max-height: 200px;
+}

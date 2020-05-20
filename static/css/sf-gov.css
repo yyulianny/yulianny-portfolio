@@ -223,11 +223,11 @@
 }
 
 .sf-gov .page {
-	width: 199px;
+	/* width: 199px; */
 	height: 377px;
 	background-size: contain;
 	display: inline-block;
-	margin-right: 84px;
+	/* margin-right: 84px; */
 	background-repeat: no-repeat;
 	background-position: center 0;
 }
