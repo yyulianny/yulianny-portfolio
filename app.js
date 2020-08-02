@@ -1,11 +1,14 @@
 var favicon = require('serve-favicon')
 var express = require('express');
 var path = require('path')
+var forceHttps = require('express-force-https');
+
 var app = express();
 
 app.set('view engine', 'ejs');
 app.use('/static', express.static('static'));
 app.use(favicon(path.join(__dirname, 'static/fav/', 'favicon.ico')))
+app.use(forceHttps);
 
 var render = express.response.render;
 express.response.render = function(view, options = {}, callback) {
