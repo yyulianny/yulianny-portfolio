@@ -4,6 +4,7 @@
 	var $prev = $lightBox.find('.prev');
 	var $close = $lightBox.find('.close');
 	var $image = $lightBox.find('.image');
+	var $gameContainer = $lightBox.find('.game-container');
 	var $body = $('html, body');
 	var $html = $('html');
 	var $main = $('main');
@@ -23,13 +24,27 @@
 			images = images.splice(index).concat(images)
 
 			loadImage();
+			$gameContainer.hide();
 			$lightBox.fadeIn();
 		});
+	});
+
+	$('.play-it').click(function(e) {
+		e.preventDefault();
+
+		var gameUrl = $(this).attr('href');
+		$image.hide();
+		$gameContainer.show().html(`
+			<iframe src="${gameUrl}" frameborder="0" allowfullscreen="" />
+		`);
+		$lightBox.fadeIn();
 	});
 
 	$lightBox.click(function() {
 		$lightBox.fadeOut(function(){
 			$image.hide();
+			$gameContainer.hide();
+			$gameContainer.html('');
 		});
 	})
 

@@ -17,6 +17,11 @@
 	max-height: 360px;
 }
 
+.game-container {
+	width: 1024px;
+	height: 812px;
+}
+
 @media screen and (max-width:1059px) {
 	.t-fill {
 		padding-top: 80%;

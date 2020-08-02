@@ -26,3 +26,7 @@
 .project-container .enemies-3 > img {
 	max-height: 150px;
 }
+
+.game-container {
+	width: 1024px;
+}
