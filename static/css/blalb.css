@@ -1,6 +1,6 @@
 
 .project-container > .logo {
-	background-image: url(../img/b-HeroImg.png);
+	background-image: url(../img/blab/blalb-hero.png);
 	background-size: cover;
 	height: 585px;
 }
@@ -25,4 +25,8 @@
 
 .project-container .enemies-3 > img {
 	max-height: 150px;
+}
+.project-container img.full {
+    max-width: 100%;
+    margin-top: 26px;
 }

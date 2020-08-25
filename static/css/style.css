@@ -7,6 +7,10 @@ body {
 	text-align: center;
 }
 
+.text-right {
+	text-align: right;
+}
+
 main {
 	width: 1060px;
 	margin: 81px auto 81px;
@@ -103,7 +107,7 @@ h1 {
 
 .gallery.phone .image:after {
 	content: '';
-	background-image: url(../img/phone.png);
+	background-image: url(../img//phone.png);
 	background-size: 104%;
 	background-position: 0 0px;
 	background-repeat: no-repeat;
@@ -117,11 +121,17 @@ h1 {
 
 .gallery > img,
 .gallery > .image {
-
-	/* box-sizing: border-box; */
 	margin: 20px;
 	object-fit: contain;
 	height: min-intrinsic;
+	cursor: pointer;
+	transition: transform 0.4s;
+	transform: scale(1);
+}
+
+.gallery > img:hover,
+.gallery > .image:hover {
+	transform: scale(1.05);
 }
 
 .gallery.col-2 > img,
@@ -325,8 +335,22 @@ font-weight: 700;
 margin-top: 20px;
 }
 
+
+.project.project-m {
+background-image: url(../img/cover/project-m.png);
+background-color: #202022;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.project.project-m .details {
+background-color: #00A69C;
+}
+
+
 .project.mm {
-background-image: url(../img/h-mm.png);
+background-image: url(../img/cover/mood-mod.png);
 background-color: #B2D5E8;
 background-repeat: no-repeat;
 background-position: center;
@@ -337,9 +361,10 @@ background-size: cover;
 background-color: #4285F4;
 }
 
+
 .project.sf {
-background-image: url(../img/h-sfpng.png);
-background-color: #202022;
+background-image: url(../img/cover/sfgov.png);
+/*background-color: #202022;*/
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -350,7 +375,7 @@ background-color: #1C3E57;
 }
 
 .project.pc {
-background-image: url(../img/h-Pinecrest.png);
+background-image: url(../img/cover/pinecrest.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -362,7 +387,7 @@ background-color: #747A4A;
 }
 
 .project.onia {
-background-image: url(../img/h-Onia.png);
+background-image: url(../img/cover/onia.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -374,7 +399,7 @@ background-color: #691834;
 }
 
 .project.guardner {
-background-image: url(../img/h-guardner.jpg);
+background-image: url(../img/cover/guardner.jpg);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -386,7 +411,7 @@ background-color: #eb543e;
 }
 
 .project.blalb {
-background-image: url(../img/h-Blalb.png);
+background-image: url(../img/cover/blalb.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -398,7 +423,7 @@ background-color: #655397;
 }
 
 .project.mall {
-background-image: url(../img/h-Mall.png);
+background-image: url(../img/cover/mallicious-intent.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -410,7 +435,7 @@ background-color: #FF3574;
 }
 
 .project.d {
-background-image: url(../img/h-Deadly.png);
+background-image: url(../img/cover/deadly-debt.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -422,7 +447,7 @@ background-color: #972546;
 }
 
 .project.g {
-background-image: url(../img/h-Gurame.png);
+background-image: url(../img/cover/gurame.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -434,7 +459,7 @@ background-color: #066E7B;
 }
 
 .project.terra {
-background-image: url(../img/h-Terra.png);
+background-image: url(../img/cover/terra-sonoma.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -446,7 +471,7 @@ background-color: #bf7e11;
 }
 
 .project.pbc {
-background-image: url(../img/h-Pbc.png);
+background-image: url(../img/cover/pinecrest-bc.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -458,7 +483,7 @@ background-color: #757344;
 }
 
 .project.burmese {
-background-image: url(../img/h-Burmese.png);
+background-image: url(../img/cover/burmese-kitchen.png);
 background-color: #404349;
 background-repeat: no-repeat;
 background-position: center;
@@ -470,7 +495,7 @@ background-color: #580e10;
 }
 
 .project.photography {
-background-image: url(../img/h-photo.png);
+background-image: url(../img/cover/photography.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -482,7 +507,7 @@ background-color: #804e72;
 }
 
 .project.collect {
-background-image: url(../img/h-collection.png);
+background-image: url(../img/cover/collection.png);
 background-color: #fff;
 background-repeat: no-repeat;
 background-position: center;/*background-size: contain;*/
@@ -523,7 +548,7 @@ height: 580px;
 .user-goal-image {
 width: 50%;
 flex-shrink: 0;
-background-image: url(../img/mm-usergoal.png);
+background-image: url(../img/mood-mod/usergoal.png);
 border-right: 1px solid #ff7b70;
 background-repeat: no-repeat;
 background-position: center;
@@ -543,7 +568,7 @@ width: 70px;
 height: 100vh;
 background-color: rgb(0, 0, 0, 0.0);
 cursor: pointer;
-background-image: url(../img/arrow.png);
+background-image: url(../img/cover/arrow.png);
 background-repeat: no-repeat;
 background-size: 50%;
 background-position: center;

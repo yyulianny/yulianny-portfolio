@@ -1,5 +1,5 @@
 .mood-mod > .logo {
-	background-image: url(../img/hero_imgFull.jpg);
+	background-image: url(../img/mood-mod/mood-mod-hero.jpg);
 }
 
 .mood-mod {
@@ -84,7 +84,7 @@
 }
 
 .mood-mod .mood-mod-title .logo {
-	background-image: url(../img/hero_imgFull.jpg);
+	background-image: url(../img/mood-mod/mood-mod-hero.jpg);
 	height: 480px;
 	background-position: center;
 	background-size: cover;

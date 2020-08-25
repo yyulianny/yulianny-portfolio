@@ -54,7 +54,7 @@
 	line-height: 48px;
 	text-align: left;
 	margin-bottom: 30px;
-	background-image: url(../img/Bandung2.jpg);
+	background-image: url(../img/about/about-hero.png);
 	height: 360px;
 	color: #fff;
 	background-size: cover;
@@ -88,8 +88,7 @@
 	font-size: 24px;
 	font-weight: 300;
 	line-height: 43px;*/
-	margin-bottom: 20px;
-	
+	margin-bottom: 20px;	
 }
 
 .about em {

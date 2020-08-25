@@ -1,5 +1,5 @@
 .onia > .logo {
-	background-image: url(../img/O-HeroImg.jpg);
+	background-image: url(../img/onia/onia-hero.jpg);
 	background-attachment: unset;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -200,7 +200,7 @@ main > .onia {
 
 .onia .sketches div {width: 100%;padding: 130px 30px;line-height: 29px;}
 
-.onia .sketches div.image {background-image: url(../img/O-sketch.jpg);background-size: contain;background-position: center;background-repeat: no-repeat;background-color: #000;}
+.onia .sketches div.image {background-image: url(../img/onia/sketch.jpg);background-size: contain;background-position: center;background-repeat: no-repeat;background-color: #000;}
 
 .onia .border {
 	border: 1px solid #691734;
@@ -248,7 +248,7 @@ main > .onia {
 }
 
 .onia .onia-title .logo {
-	background-image: url(../img/hero_imgFull.jpg);
+	background-image: url(../img/onia/onia-hero.jpg);
 	height: 480px;
 	background-position: center;
 	background-size: cover;

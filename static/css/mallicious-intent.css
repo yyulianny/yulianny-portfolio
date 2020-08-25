@@ -1,0 +1,36 @@
+
+.project-container > .logo {
+	background-image: url(../img/mallicious-intent/mall-hero.png);
+	background-size: contain;
+	height: 535px;
+	background-color: #ff3473;
+}
+
+.project-container h1,
+.project-container .play-it,
+.project-container h3 {
+	color: #FF3574;
+  text-transform: none;
+}
+
+.characters > img {
+	max-height: 360px;
+}
+
+.game-container {
+	width: 1024px;
+	height: 812px;
+}
+
+@media screen and (max-width:1059px) {
+	.t-fill {
+		padding-top: 80%;
+	}
+
+}
+
+/*
+.project-container h2 {
+  color: #FF3574;
+  text-transform: lowercase;
+}*/
