@@ -7,6 +7,10 @@ body {
 	text-align: center;
 }
 
+.text-right {
+	text-align: right;
+}
+
 main {
 	width: 1060px;
 	margin: 81px auto 81px;
@@ -117,11 +121,17 @@ h1 {
 
 .gallery > img,
 .gallery > .image {
-
-	/* box-sizing: border-box; */
 	margin: 20px;
 	object-fit: contain;
 	height: min-intrinsic;
+	cursor: pointer;
+	transition: transform 0.4s;
+	transform: scale(1);
+}
+
+.gallery > img:hover,
+.gallery > .image:hover {
+	transform: scale(1.05);
 }
 
 .gallery.col-2 > img,
@@ -326,7 +336,7 @@ margin-top: 20px;
 }
 
 
-.project.m {
+.project.project-m {
 background-image: url(../img/cover/project-m.png);
 background-color: #202022;
 background-repeat: no-repeat;
@@ -334,7 +344,7 @@ background-position: center;
 background-size: cover;
 }
 
-.project.m .details {
+.project.project-m .details {
 background-color: #00A69C;
 }
 

@@ -1,8 +1,10 @@
 .project-m > .logo {
 	background-image: url(../img/Project-m/hero-img.png);
-	background-attachment: unset;
+	background-attachment: initial;
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
+	height: 560px;
 }
 
 .project-m {
@@ -178,7 +180,7 @@ main > .project-m  {
 }
 
 .project-m .background {
-	background-color: #FFF8DC;
+	background-color: #eefff8;
 	box-sizing: border-box;
 	padding: 20px;
 	width: calc(100% + 40px);
@@ -187,7 +189,7 @@ main > .project-m  {
 }
 
 .project-m .prototypes {
-    background-color: #691335;
+    /* background-color: #691335; */
     padding: 40px;
     box-sizing: border-box;
     margin-top: 20px;
@@ -238,7 +240,8 @@ main > .project-m  {
 .project-m .sketches div.image {background-image: url(../img/onia/sketch.jpg);background-size: contain;background-position: center;background-repeat: no-repeat;background-color: #000;}
 
 .project-m .border {
-	border: 1px solid #691734;
+	border: 2px solid #b3b3b3;
+	box-sizing: border-box;
 }
 
 .project-m h3 {
@@ -253,9 +256,74 @@ main > .project-m  {
 	margin-bottom: 20px;
 }
 
+.project-m .sub-header {
+	color: #00a69c;
+	font-weight: 700;
+}
+
+.creative-process-mobile {
+	display: none;
+	counter-reset: cp;
+}
+
+.creative-process-mobile p {
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+.creative-process-mobile p:before {
+  counter-increment: cp;
+  content: counter(cp);
+}
+
+.project-m .creative-process {margin-bottom: -40px;}
+
+.project-m .creative-process-2 {
+	margin-top: -18px;
+}
+
+.project-m .creative-process-2 p,
+.project-m .creative-process p {
+	position: relative;
+	width: auto !important;
+	font-size: 18px;
+	line-height: 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.project-m .logical {overflow: auto;position: relative;margin-top: 26px;border: 1px solid #b3b3b3;}
+
+
+.project-m .logical img.full {
+	max-width: 2048px;
+	margin: 20px;
+}
+
+.project-m .creative-process p:nth-child(2) {
+    left: 210px;
+}
+.project-m .creative-process p:nth-child(3) {
+    left: 331px;
+}
+
+.project-m .creative-process-2 p:nth-child(1) {
+    left: 230px;
+}
+.project-m .creative-process-2 p:nth-child(2) {
+    left: 284px;
+}
+
 .project-m img.full {
 	max-width: 100%;
 	margin-top: 26px;
+}
+
+.project-m img.market-size {
+	max-width: 80%;
+	display: block;
+	margin: 40px auto 0;
 }
 
 .project-m .fill {
@@ -291,7 +359,12 @@ main > .project-m  {
 
 .project-m .video {
 	margin-top: 74px;
+	display: flex;
 	/* background-color: #000; */
+}
+
+.project-m .video iframe {
+	/*width: 50%;*/
 }
 
 .project-m .mm-details {
@@ -609,7 +682,7 @@ main > .project-m  {
 }
 
 .project-m .problem-solution {
-	padding: 10px 92px;
+	padding: 10px 0 10px 92px;
 }
 
 .project-m .problem-solution > div {
@@ -626,7 +699,7 @@ main > .project-m  {
 	width: 279px;
 	box-sizing: border-box;
 	flex-shrink: 0;
-	color: #E10078;
+	color: #00a69c;
 }
 
 .project-m .problem-solution .body {
@@ -639,6 +712,7 @@ main > .project-m  {
 .project-m .problem-solution li {
 	list-style: initial;
 	margin-left: 19px;
+	list-style: none;
 }
 
 .project-m .mvp {/* height: 230px; */margin-top: 30px;}
@@ -646,8 +720,17 @@ main > .project-m  {
 .project-m .mvp > img {margin:  0;height: 100%;object-fit: fill;width: 25%;}
 
 @media screen and (max-width:1059px) {
+	.creative-process-desktop {
+		display: none;
+	}
+
+	.creative-process-mobile {
+		display: block;
+	}
+
+
 	.project-m > .logo {
-		background-position-x: 0;
+		/* background-position-x: 0; */
 	}
 
 
@@ -681,6 +764,16 @@ main > .project-m  {
 }
 
 @media screen and (max-width:600px) {
+	.project-m .video {
+		flex-wrap: wrap;
+	}
+	.project-m .video iframe {
+		flex-shrink: 0;
+		width: 100%;
+		height:  260px;
+		margin: 10px 0;
+	}
+
 	.project-m .mvp > img {
 		width: 50%;
 		height: 100%;
