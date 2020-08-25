@@ -1,0 +1,15 @@
+.project-container > .logo {
+	background-image: url(../img/terra/terra-hero.png);
+	background-size: 102%;
+}
+
+.sketches {
+
+}
+
+#terra .sketches > img {
+	margin: 0;
+	width:  50%;
+}
+
+#terra .products > img{object-fit: cover;}

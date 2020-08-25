@@ -1,0 +1,14 @@
+.project-container > .logo {
+	background-image: url(../img/burmese-kitchen/burmese-hero.png);
+	background-size: 102%;
+}
+
+
+.sketches {
+	width: 90%;
+	margin: auto;
+}
+
+.products img {
+	object-fit: cover;
+}

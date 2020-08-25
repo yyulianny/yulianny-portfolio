@@ -1,0 +1,23 @@
+.project-container > .logo {
+	background-image: url(../img/deadly-debt/deadly-hero.png);
+	background-color: #000;
+}
+
+.project-container h1,
+.project-container .play-it,
+.project-container h3 {
+	color: #972546;
+}
+
+.stash > img {
+	max-height: 200px;
+}
+
+.enemies > img {
+	max-height: 200px;
+}
+
+.game-container {
+	width: 1000px;
+	height: 640px;
+}
