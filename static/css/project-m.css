@@ -208,7 +208,7 @@ main > .project-m  {
 
 .project-m .logic p {
 	margin: 30px auto;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .project-m .logic .image {
@@ -259,6 +259,7 @@ main > .project-m  {
 .project-m .sub-header {
 	color: #00a69c;
 	font-weight: 700;
+	font-size: 22px;
 }
 
 .creative-process-mobile {
@@ -638,7 +639,7 @@ main > .project-m  {
 }
 
 .project-m > p {
-	/* font-size: 18px; */
+	font-size: 18px; 
 	line-height: 30px;
 	letter-spacing: 0.02em;
 	/* padding: 26px 0px 26px 20px; */
