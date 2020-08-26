@@ -326,13 +326,18 @@ margin-bottom: 10px;
 
 .project .sub-title {
 font-size: 24px;
-font-weight: 500;
+font-weight: 300;
 margin-bottom: 40px;
+font-family: Open Sans;
 }
 
+/*Cover categories*/
+/*-----------------------------*/
 .project .categories {
-font-weight: 700;
+/*font-family: Open Sans;*/
+font-weight: 600;
 margin-top: 20px;
+line-height: 25px;
 }
 
 
