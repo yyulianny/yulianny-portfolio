@@ -147,3 +147,49 @@
 .project.project-m.current {
 	border-color: #5d5f55;
 }
+
+.carousel .project.project-m {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/project-m.png);
+}
+.carousel .project.mm {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/mood-mod.png);
+}
+.carousel .project.sf {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/sfgov.png);
+}
+.carousel .project.pc {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/pinecrest.png);
+}
+.carousel .project.onia {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/onia.png);
+}
+.carousel .project.guardner {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/guardner.jpg);
+}
+.carousel .project.blalb {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/blalb.png);
+}
+.carousel .project.mall {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/mallicious-intent.png);
+}
+.carousel .project.d {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/deadly-debt.png);
+}
+.carousel .project.g {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/gurame.png);
+}
+.carousel .project.terra {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/terra-sonoma.png);
+}
+.carousel .project.pbc {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/pinecrest-bc.png);
+}
+.carousel .project.burmese {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/burmese-kitchen.png);
+}
+.carousel .project.photography {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/photography.png);
+}
+.carousel .project.collect {
+    background-image: url(/dynamic/c_fill,w_250,h_200/img/cover/collection.png);
+}

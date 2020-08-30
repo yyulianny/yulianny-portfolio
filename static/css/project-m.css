@@ -1,5 +1,5 @@
 .project-m > .logo {
-	background-image: url(../img/project-m/hero-img.png);
+	background-image: url(/dynamic/img/project-m/hero-img.jpg);
 	background-attachment: initial;
 	background-size: contain;
 	background-repeat: no-repeat;

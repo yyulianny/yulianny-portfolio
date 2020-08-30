@@ -2,6 +2,7 @@ var favicon = require('serve-favicon')
 var express = require('express');
 var path = require('path')
 var forceHttps = require('express-force-https');
+var proxy = require('express-http-proxy');
 
 var app = express();
 
@@ -28,6 +29,21 @@ express.response.render = function(view, options = {}, callback) {
 app.get('/', function(req, res){
   res.render('index');
 });
+
+app.use('/dynamic/img/*', proxy('res.cloudinary.com', {
+  proxyReqPathResolver: function (req) {
+    const imagePath = req.params[0];
+    return `/yulianny/image/upload/v1598750055/${imagePath}`
+  }
+}));
+
+app.use('/dynamic/:size/img/*', proxy('res.cloudinary.com', {
+  proxyReqPathResolver: function (req) {
+    const imagePath = req.params[0];
+    const size = req.params.size;
+    return `/yulianny/image/upload/${size}/v1598750055/${imagePath}`
+  }
+}));
 
 const pathsWithoutGame = ['mood-mod','onia','pinecrest','sf-gov'];
 
