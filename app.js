@@ -33,7 +33,7 @@ app.get('/', function(req, res){
 app.use('/dynamic/img/*', proxy('res.cloudinary.com', {
   proxyReqPathResolver: function (req) {
     const imagePath = req.params[0];
-    return `/yulianny/image/upload/v1598750055/${imagePath}`
+    return `/yulianny/image/upload/${imagePath}`
   }
 }));
 
@@ -41,7 +41,7 @@ app.use('/dynamic/:size/img/*', proxy('res.cloudinary.com', {
   proxyReqPathResolver: function (req) {
     const imagePath = req.params[0];
     const size = req.params.size;
-    return `/yulianny/image/upload/${size}/v1598750055/${imagePath}`
+    return `/yulianny/image/upload/${size}/${imagePath}`
   }
 }));
 
