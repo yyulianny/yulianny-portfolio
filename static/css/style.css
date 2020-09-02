@@ -380,7 +380,7 @@ background-color: #1C3E57;
 }
 
 .project.pc {
-background-image: url(../img/cover/pinecrest.png);
+background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/pinecrest.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -404,7 +404,7 @@ background-color: #691834;
 }
 
 .project.guardner {
-background-image: url(../img/cover/guardner.jpg);
+background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/guardner.jpg);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -416,7 +416,7 @@ background-color: #eb543e;
 }
 
 .project.blalb {
-background-image: url(../img/cover/blalb.png);
+background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/blalb.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -441,7 +441,7 @@ background-color: #FF3574;
 }
 
 .project.d {
-background-image: url(../img/cover/deadly-debt.png);
+background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/deadly-debt.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -453,7 +453,7 @@ background-color: #972546;
 }
 
 .project.g {
-background-image: url(../img/cover/gurame.png);
+background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/gurame.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
@@ -477,7 +477,7 @@ background-color: #bf7e11;
 }
 
 .project.pbc {
-background-image: url(../img/cover/pinecrest-bc.png);
+background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/pinecrest-bc.png);
 background-color: #fafafa;
 background-repeat: no-repeat;
 background-position: center;
