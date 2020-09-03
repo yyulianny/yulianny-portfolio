@@ -41,7 +41,7 @@ app.use('/dynamic/:size/img/*', proxy('res.cloudinary.com', {
   proxyReqPathResolver: function (req) {
     const imagePath = req.params[0];
     const size = req.params.size;
-    return `/yulianny/image/upload/${size}/${imagePath}`
+    return `/yulianny/image/upload/${size}/v1/${imagePath}`
   }
 }));
 
