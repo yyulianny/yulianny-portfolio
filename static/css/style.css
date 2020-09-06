@@ -815,37 +815,48 @@ position: relative;/* background-color: red; */
 z-index: 1;
 }
 
-.dropdown ul {
-position: absolute;
-left: 0;
-top: 26px;
-text-align: left;
-background-color: #575757;
-padding: 5px 0;
-display: none;	/*opacity: 0;*/
-box-sizing: border-box;
-transition: opacity 0.2s;
+.dropdown .project-nav {
+	position: absolute;
+	right: -158px;
+	top: 36px;
+	text-align: left;
+	background-color: #ffffff;
+	padding: 5px 0;
+	display: none;
+	box-sizing: border-box;
+	transition: opacity 0.2s;
+	border:  1px solid #E0E0E0;
+	border-radius: 5px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 27px 10px 27px 35px;
+	font-family: Rajdhani;
 }
 
-.dropdown ul li {
-white-space: nowrap;
-line-height: 26px;
-padding: 5px 10px;
+.project-nav .break {
+	margin: 0;
 }
 
-.dropdown ul li a {
-text-decoration: none;
-color: white;
-text-transform: none;
+
+.dropdown .project-nav:before {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 156px;
+	top:-20px;
+	width: 82px;
+	height: 25px;
 }
 
-.dropdown ul li:hover {
-background-color: #686868;
-}
+.dropdown ul {margin-right: 30px;}
+.dropdown ul:last-child {margin-right: 0px;}
 
-.dropdown:hover ul {
-display: block;	/*opacity: 1;*/
-}
+.dropdown ul li {white-space: nowrap;width: 140px;}
+
+.dropdown ul li a {text-decoration: none;color: #000;text-transform: none;font-weight: 300;font-size: 20px;line-height: 140%;}
+
+.dropdown ul li a:hover {color: #e25b68;font-weight: 500;}
+
+.dropdown:hover .project-nav {display: flex;}
 
 .contain {
 background-size: contain !important;
@@ -878,6 +889,27 @@ background-size: contain !important;
 
 	main.fixed nav {
 		width: 100%;
+	}
+
+	.project-nav {
+		width: 422px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.project-nav ul {
+		margin: 0px;
+		width: 160px;
+		margin-bottom: 20px;
+	}
+
+	.project-nav ul:nth-child(2) {
+		margin-right: 0;
+	}
+
+	.project-nav ul:nth-child(3),
+	.project-nav ul:last-child {
+		margin-bottom: 0px;
 	}
 
 	nav {
@@ -965,6 +997,19 @@ background-size: contain !important;
 	    width: 100%;
 	    margin-top: 20px;
 	}
+
+	.dropdown .project-nav {
+		right: initial;
+		left: 0;
+		top: initial;
+		padding: 20px;
+		width: 100vw;
+		justify-content: space-evenly;
+	}
+
+	.dropdown .project-nav:before {
+		content: none;
+	}
 	
 	.yy {
 		display: block;
@@ -1012,6 +1057,10 @@ background-size: contain !important;
 
 	.m-show {
 		display: block;
+	}
+
+	nav .dropdown {
+		position: initial;
 	}
 
 	nav .dropdown,
