@@ -327,8 +327,21 @@ span.details {}
   background-size: cover;
 }
 .project.project-m .details {
-  background-color: #00A69C;
+  background-color: #00A69C; 
 }
+
+.project.ipmd {
+  background-image: url(../img/cover/ipmd.png);
+  background-color: #202022;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.project.ipmd .details {
+  /*background-color: #ff7b70; */
+  background-color: #e65756;   
+}
+
 .project.mm {
   background-image: url(../img/cover/mood-mod.png);
   background-color: #B2D5E8;
