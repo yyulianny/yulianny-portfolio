@@ -391,6 +391,17 @@ span.details {}
 .project.guardner .details {
   background-color: #eb543e;
 }
+.project.arcternal {
+  /*background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/arcternal.png);*/
+  background-image: url(/static/img/cover/arcternal.png);
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.project.arcternal .details {
+  background-color: #EE4784;
+}
 .project.blalb {
   background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/blalb.png);
   background-color: #fafafa;
