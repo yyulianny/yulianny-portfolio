@@ -260,7 +260,7 @@ main > .project-m  {
 	height: 108px;
 }
 
-.project-m .flex.even {justify-content: space-between;}
+.project-m .flex.even {margin-bottom: 90px; justify-content: space-between;}
 .project-m .flex.even p {
 	/* flex-grow: 1; */
 	/* flex-shrink: 1; */
@@ -292,6 +292,7 @@ main > .project-m  {
 	/* padding-left: 20px; */
 	margin-bottom: 20px;
 }
+
 /*.project-m h3 {
 	text-align: center;
 	text-transform: uppercase;
@@ -380,10 +381,22 @@ main > .project-m  {
 	margin-top: 26px;
 }
 
+.project-m h3.h3-size {
+	text-align: left;
+	text-transform: uppercase;
+	color: #E10078;
+	font-size: 30px;
+	font-weight: 600;
+	margin-top: 10px;
+	line-height: 1em;
+	/* padding-left: 20px; */
+	margin-bottom: 20px;
+}
+
 .project-m img.market-size {
 	max-width: 80%;
 	display: block;
-	margin: 40px auto 0;
+	margin: 40px auto 100px;
 }
 
 .project-m .fill {
@@ -743,14 +756,19 @@ main > .project-m  {
 
 .project-m .problem-solution {
 	padding: 0px 0 10px 0px;
+	margin-bottom: 10px;
 	/*padding: 10px 0 10px 92px;*/
 }
 
 .project-m .problem-solution > div {
 	display: flex;
-	/*margin: 20px 0;*/
-	margin: 20px 0px;
+	margin: 20px 0;
 }
+
+/*.project-m .problem > div {
+	display: flex;
+	margin-top: 300px;
+}*/
 
 .project-m .problem-solution .header {
 	display: inline-block;
