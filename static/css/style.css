@@ -442,6 +442,17 @@ span.details {}
 .project.g .details {
   background-color: #066E7B;
 }
+.project.brand {
+  /*background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/brand.png);*/
+  background-image: url(../img/cover/brand.png);
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.project.brand .details {
+  background-color: #505153;
+}
 .project.terra {
   background-image: url(../img/cover/terra-sonoma.png);
   background-color: #fafafa;
@@ -483,13 +494,14 @@ span.details {}
   background-color: #804e72;
 }
 .project.collect {
-  background-image: url(../img/cover/collection.png);
+  /*background-image: url(../img/cover/collection.png);*/
+  background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/collection.png);
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
-  left: 0;
-  height: 530px;
+  /*width: 100%;*/
+  /*left: 0;*/
+  /*height: 530px;*/
   background-size: cover;
 }
 .project.collect .details {
