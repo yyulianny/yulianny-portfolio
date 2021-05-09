@@ -1,7 +1,5 @@
-
 .project-container > .logo {
-	/*background-image: url(../img/arcternal/arcternal-hero.png);*/
-  background-image: url(//static.jam.vg/raw/150/1/z/3835f.png);
+	background-image: url(../img/fathomless/fathomless-hero.png);
 	background-size: cover;
 	height: 585px;
 }
@@ -9,7 +7,7 @@
 .project-container h1,
 .project-container .play-it,
 .project-container h3 {
-	color: #EE4784;
+	color: #2080B6;
 }
 
 .project-container .enemies {
@@ -27,11 +25,15 @@
 .project-container .enemies-3 > img {
 	max-height: 150px;
 }
-
-.game-container {
-	width: 1024px;
+.project-container img.full {
+    max-width: 100%;
+    margin-top: 26px;
 }
 
 .project-container iframe {
   max-width: 100%;
+}
+
+.project-container .fathomless-video {
+  /*margin-left: -20px;*/
 }

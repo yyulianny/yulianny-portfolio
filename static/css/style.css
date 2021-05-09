@@ -381,6 +381,19 @@ span.details {}
 .project.onia .details {
   background-color: #691834;
 }
+
+.project.fathomless{
+  /*background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/fathomless.png);*/
+  background-image: url(/static/img/cover/fathomless.png);
+  background-color: #fafafa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.project.fathomless .details {
+  background-color: #2080B6;
+}
+
 .project.guardner {
   background-image: url(/dynamic/c_fill,w_490,h_490/img/cover/guardner.jpg);
   background-color: #fafafa;
