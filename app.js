@@ -11,6 +11,18 @@ app.use('/static', express.static('static'));
 app.use(favicon(path.join(__dirname, 'static/fav/', 'favicon.ico')))
 app.use(forceHttps);
 
+const productDomains = ['localhost2', 'yennyyulianny.com', 'www.yennyyulianny.com'];
+const Sites = {
+  MAIN: 'main',
+  PRODUCT: 'product'
+};
+
+app.use((req, res, next) => {
+  res.locals.site = productDomains.includes(req.host) ? Sites.PRODUCT : Sites.MAIN;
+  res.locals.siteFolder = res.locals.site === Sites.PRODUCT ? 'product/' : '';
+  next();
+});
+
 var render = express.response.render;
 express.response.render = function(view, options = {}, callback) {
     console.log(options);
@@ -27,7 +39,7 @@ express.response.render = function(view, options = {}, callback) {
 };
 
 app.get('/', function(req, res){
-  res.render('index');
+  res.render(`${res.locals.siteFolder}index`);
 });
 
 app.use('/dynamic/img/*', proxy('res.cloudinary.com', {

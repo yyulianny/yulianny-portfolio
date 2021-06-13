@@ -32,11 +32,11 @@
   </head>
   <body>
     <main>
-      <%- include('../header') %>
+      <%- include(`../${siteFolder}header`) %>
       <%- include('../' + contentView) %>
 
       <% if (contentView != 'index') { %>
-        <%- include('../carousel') %>
+        <%- include(`../${siteFolder}carousel`) %>
       <% } %>
     </main>
     <%- include('../footer') %>
