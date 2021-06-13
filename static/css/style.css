@@ -193,6 +193,11 @@ h1 {
   margin-right: 10px;
 }
 
+.site-product .yy:before {
+  background-image: none;
+  width: 8px;
+}
+
 .billboard {
   margin: 0;
   font-family: Rajdhani, sans-serif;
