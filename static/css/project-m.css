@@ -361,6 +361,11 @@ main > .project-m  {
 	margin: 20px;
 }
 
+.project-m .login img.full {
+	max-width: 100%;
+	margin: 20px;
+}
+
 .project-m .creative-process p:nth-child(2) {
     left: 210px;
 }
