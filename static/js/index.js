@@ -11,23 +11,28 @@
 
 	var images = [];
 
-	$('.gallery').each(function() {
-		var $gallery = $(this);
-		var $images = $gallery.find('.image, img');
-		var galleryImages = $images.map(function() {
-			return $(this).data('image') || $(this).attr('src').split('img/').pop();
-		}).get();
+	$('.gallery, .galleries section').each(function () {
+    var $gallery = $(this);
+    var $images = $gallery.find('.image, img');
+    var galleryImages = $images
+      .map(function () {
+        return (
+          $(this).data('image') ||
+          $(this).attr('src').split('img/').pop().replace('/thumbs/', '/')
+        );
+      })
+      .get();
 
-		$images.click(function() {
-			var index = $images.index($(this));
-			images = galleryImages.slice();
-			images = images.splice(index).concat(images)
+    $images.click(function () {
+      var index = $images.index($(this));
+      images = galleryImages.slice();
+      images = images.splice(index).concat(images);
 
-			loadImage();
-			$gameContainer.hide();
-			$lightBox.fadeIn();
-		});
-	});
+      loadImage();
+      $gameContainer.hide();
+      $lightBox.fadeIn();
+    });
+  });
 
 	$('.play-it').click(function(e) {
 		e.preventDefault();

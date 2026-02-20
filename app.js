@@ -39,7 +39,9 @@ express.response.render = function(view, options = {}, callback) {
 };
 
 app.get('/', function(req, res){
-  res.render(`${res.locals.siteFolder}index`);
+  res.render(`${res.locals.siteFolder}index`, {
+    useNewCss: false,
+  });
 });
 
 app.use('/dynamic/img/*', proxy('res.cloudinary.com', {
@@ -61,9 +63,11 @@ const pathsWithoutGame = ['mood-mod','onia','pinecrest','sf-gov'];
 
 app.get('/:path', function(req, res){
   res.render(req.params.path, {
-  	styles: (pathsWithoutGame.indexOf(req.params.path) !== -1 ? [] : ['game.css']).concat(
-  		[`${req.params.path}.css`]
-  	)
+    styles: (pathsWithoutGame.indexOf(req.params.path) !== -1
+      ? []
+      : ['game.css']
+    ).concat([`${req.params.path}.css`]),
+    useNewCss: ['iq-marketer'].indexOf(req.params.path) !== -1,
   });
 });
 
