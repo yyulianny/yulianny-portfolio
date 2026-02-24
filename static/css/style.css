@@ -300,6 +300,11 @@ h3 {
 .project:hover .details {
   opacity: 1;
 }
+
+.project.no-hover:hover .details {
+  opacity: 0;
+}
+
 span.details {}
 .project .details>span {
   display: block;
@@ -333,6 +338,17 @@ span.details {}
 }
 .project.project-m .details {
   background-color: #00A69C; 
+}
+
+.project.iq-marketer {
+  background-image: url(../img/cover/iq-marketer.png);
+  background-color: #202022;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.project.iq-marketer .details {
+  background-color: #8a61ce; 
 }
 
 .project.ipmd {
@@ -545,6 +561,33 @@ span.details {}
 .project-container>.logo-buffer {
   height: 580px;
 }
+
+/* New */
+
+.project-details {
+  font-family: "Open Sans", sans-serif;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+/* New */
+
 .user-goal-image {
   width: 50%;
   flex-shrink: 0;
@@ -576,7 +619,7 @@ section.border {
   height: 100vh;
   background-color: rgb(0, 0, 0, 0.0);
   cursor: pointer;
-  background-image: url(../img/cover/arrow.png);
+  background-image: url(../img/arrow.png);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
@@ -870,6 +913,7 @@ footer div {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.game-container video,
 .game-container iframe {
   width: 100%;
   height: 100%;
@@ -884,6 +928,14 @@ footer div {
   
   main.fixed nav {
     width: 100%;
+  }
+
+  .project-details {
+    display: none;
+  }
+
+  .project.no-hover:hover .details {
+    opacity: 1;
   }
   
   .project-nav {

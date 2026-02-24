@@ -45,6 +45,19 @@
 		$lightBox.fadeIn();
 	});
 
+	$('.video-view').click(function (e) {
+    e.preventDefault();
+
+    var gameUrl = this.currentSrc;
+    $image.hide();
+    $gameContainer.show().html(`
+			<video autoplay muted playsinline controls>
+				<source src="${gameUrl}" type="video/mp4">
+			</video>
+		`);
+    $lightBox.fadeIn();
+  });
+
 	$lightBox.click(function() {
 		$lightBox.fadeOut(function(){
 			$image.hide();

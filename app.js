@@ -11,7 +11,39 @@ app.use('/static', express.static('static'));
 app.use(favicon(path.join(__dirname, 'static/fav/', 'favicon.ico')))
 app.use(forceHttps);
 
-const productDomains = ['localhost2', 'yennyyulianny.com', 'www.yennyyulianny.com'];
+const passwordProtextedPaths = ['/iq-marketer'];
+
+app.use((req, res, next) => {
+  if (passwordProtextedPaths.includes(req.path)) {
+    const auth = { login: 'jeremy', password: 'yenny' };
+
+    const b64auth = (req.headers.authorization || '').split(' ')[1] || '';
+    const [login, password] = Buffer.from(b64auth, 'base64')
+      .toString()
+      .split(':');
+
+    if (
+      login &&
+      password &&
+      login === auth.login &&
+      password === auth.password
+    ) {
+      return next();
+    }
+
+    // Access denied...
+    res.set('WWW-Authenticate', 'Basic realm="401"'); // change this
+    res.status(401).send('Authentication required.'); // custom message
+  } else {
+    next();
+  }
+});
+
+const productDomains = [
+  'localhost2',
+  'yennyyulianny.com',
+  'www.yennyyulianny.com',
+];
 const Sites = {
   MAIN: 'main',
   PRODUCT: 'product'
@@ -34,6 +66,7 @@ express.response.render = function(view, options = {}, callback) {
     }, ...options};
 
     options.contentView = view;
+    console.log('view', view);
 
     render.call(this, 'layouts/default', options, callback);
 };

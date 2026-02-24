@@ -1,0 +1,28 @@
+services:
+  yy:
+    build: .
+    restart: always
+    env_file:
+      - path: "./.env"
+        required: false
+    networks:
+      - web
+
+    labels:
+      - "traefik.enable=true"
+
+      # Router
+      - "traefik.http.routers.yy.rule=Host(`${HOST}`)${TRAEFIK_PATH_RULE:-}"
+      - "traefik.http.routers.yy.entrypoints=websecure"
+      - "traefik.http.routers.yy.tls.certresolver=letsencrypt"
+
+      # Service
+      - "traefik.http.services.yy.loadbalancer.server.port=${PORT}"
+
+      # # Optional StripPrefix middleware
+      # - "traefik.http.middlewares.${TRAEFIK_MIDDLEWARES:-${APP_NAME}-${STACK:-}-strip-${VERSION:-}}.stripprefix.prefixes=${TRAEFIK_STRIP_PREFIXES:-/__disabled__}"
+      # - "traefik.http.routers.yy.middlewares=${TRAEFIK_MIDDLEWARES:-}"
+
+networks:
+  web:
+    external: true

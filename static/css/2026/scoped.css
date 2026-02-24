@@ -1,4 +1,4 @@
-.scoped {
+
   body {
     font-family: Rajdhani, sans-serif;
     color: #4f4f4f;
@@ -577,7 +577,7 @@
     height: 100vh;
     background-color: rgb(0, 0, 0, 0.0);
     cursor: pointer;
-    background-image: url(../img/cover/arrow.png);
+    background-image: url(../img/arrow.png);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
