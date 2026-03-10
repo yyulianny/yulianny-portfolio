@@ -336,14 +336,14 @@ span.details {}
   background-color: #00A69C; 
 }
 
-.project.iq-marketer {
-  background-image: url(../img/cover/iq-marketer.png);
+.project.iq-campaign {
+  background-image: url(../img/cover/iq-campaign.png);
   background-color: #202022;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.project.iq-marketer .details {
+.project.iq-campaign .details {
   background-color: #8a61ce; 
 }
 

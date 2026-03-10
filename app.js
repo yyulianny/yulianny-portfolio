@@ -11,7 +11,7 @@ app.use('/static', express.static('static'));
 app.use(favicon(path.join(__dirname, 'static/fav/', 'favicon.ico')))
 app.use(forceHttps);
 
-const passwordProtextedPaths = ['/iq-marketer', '/creval'];
+const passwordProtextedPaths = ['/iq-campaign', '/creval'];
 
 app.use((req, res, next) => {
   if (passwordProtextedPaths.includes(req.path)) {
@@ -100,7 +100,7 @@ app.get('/:path', function(req, res){
       ? []
       : ['game.css']
     ).concat([`${req.params.path}.css`]),
-    useNewCss: ['iq-marketer', 'creval'].indexOf(req.params.path) !== -1,
+    useNewCss: ['iq-campaign', 'creval'].indexOf(req.params.path) !== -1,
   });
 });
 
