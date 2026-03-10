@@ -11,11 +11,11 @@ app.use('/static', express.static('static'));
 app.use(favicon(path.join(__dirname, 'static/fav/', 'favicon.ico')))
 app.use(forceHttps);
 
-const passwordProtextedPaths = ['/iq-marketer'];
+const passwordProtextedPaths = ['/iq-marketer', '/creval'];
 
 app.use((req, res, next) => {
   if (passwordProtextedPaths.includes(req.path)) {
-    const auth = { login: 'jeremy', password: 'yenny' };
+    const auth = { login: 'product', password: 'product' };
 
     const b64auth = (req.headers.authorization || '').split(' ')[1] || '';
     const [login, password] = Buffer.from(b64auth, 'base64')
@@ -100,7 +100,7 @@ app.get('/:path', function(req, res){
       ? []
       : ['game.css']
     ).concat([`${req.params.path}.css`]),
-    useNewCss: ['iq-marketer'].indexOf(req.params.path) !== -1,
+    useNewCss: ['iq-marketer', 'creval'].indexOf(req.params.path) !== -1,
   });
 });
 

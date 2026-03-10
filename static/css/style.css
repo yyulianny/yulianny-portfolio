@@ -193,10 +193,10 @@ h1 {
   margin-right: 10px;
 }
 
-.site-product .yy:before {
+/* .site-product .yy:before {
   background-image: none;
   width: 8px;
-}
+} */
 
 .billboard {
   margin: 0;
@@ -349,6 +349,17 @@ span.details {}
 }
 .project.iq-marketer .details {
   background-color: #8a61ce; 
+}
+
+.project.creval {
+  background-image: url(../img/cover/creval.png);
+  background-color: #202022;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.project.creval .details {
+  background-color: #356683; 
 }
 
 .project.ipmd {

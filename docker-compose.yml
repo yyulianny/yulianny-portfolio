@@ -12,7 +12,7 @@ services:
       - "traefik.enable=true"
 
       # Router
-      - "traefik.http.routers.yy.rule=Host(`${HOST}`)${TRAEFIK_PATH_RULE:-}"
+      - "traefik.http.routers.yy.rule=Host(`www.yennyyulianny.com`) || Host(`www.yulianny.com`)"
       - "traefik.http.routers.yy.entrypoints=websecure"
       - "traefik.http.routers.yy.tls.certresolver=letsencrypt"
 

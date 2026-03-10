@@ -1,0 +1,337 @@
+<div class="sections galleries">
+  <section>
+    <div class="hero">
+      <img class="no-border" src="/static/img/creval/big-thumbs/hero.png" alt="">
+      <div class="title">
+        <div>
+          <h1>CREVAL – Comparables</h1>
+          <p>A redesigned Comparables module that brings clarity and simplifies complex data, enabling appraisers to easily find, compare, and validate property information within a seamless platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <video class="video-view fit" autoplay muted playsinline>
+      <source src="/static/img/creval/videos/Comparables.mp4" type="video/mp4">
+    </video>
+  </section>
+  <section>
+    <div class="flex">
+      <h2>COLLABORATION</h2>
+      <div class="grid">
+        <div>
+          <div>
+            <div><strong>Product, UX, Visual Design</strong> Yenny Yulianny</div>
+            <div><strong>Content Designer</strong> Rochelle Lagam</div>
+            <div><strong>Researcher</strong> Yihan Wu</div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div><strong>Product owner</strong> Nathan X White & Annette Lee</div>
+            <div><strong>Tech</strong> Briana L Woods & Kester V Guischard</div>
+            <div><strong>Project length</strong> Three months</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="title">
+        <h2>Overview</h2>
+        <p>The Comparables module is a key component of the appraisal process, supporting <strong>appraisers in identifying, analyzing, and comparing similar properties</strong>—commonly referred to as “comps”—to the subject property. These comps are selected based on shared characteristics such as <strong>location, size, property type, and market conditions.</strong> The module enables efficient data collection, comparison, and reporting, making it a foundational tool for developing accurate and defensible property valuations. Our goal was to redesign a complex, data-heavy module to be intuitive, consistent, and scalable using the Salt Design System.</p>
+      </div>
+    <div class="grid grid-3 bg-fill gradient">
+      <div>
+        <h3>Problem</h3>
+        <p>The Comparables module currently has <strong>inconsistent UI patterns and fragmented workflows</strong>, making it difficult for users to efficiently access and analyze property data. These issues lead to user frustration and inefficiency when comparing properties.</p>
+      </div>
+      <div>
+        <h3>Objective</h3>
+        <p><strong>Redesign and modernize</strong> the Comparables module UI using the Salt Design System and Pepper library to enhance user experience, while migrating the backend from <strong>Angular and Bootstrap to a React</strong> framework integrated with the Salt Design System.</p>
+      </div>
+       <div>
+        <h3>HMW</h3>
+        <p>How might we <strong>modernize</strong> the “Comparables” using the Salt Design System to create a cohesive, research-driven experience that <strong>streamlines workflows and makes appraisals more intuitive, faster, and efficient?</strong></p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="title">
+      <h2>Design Strategy & Process</h2>
+      <p>To ensure the redesign met both <strong>business and user goals</strong>, we took a collaborative, system-driven approach that <strong>balanced user needs with design scalability</strong>—starting by understanding the appraiser persona, who compares multiple property datasets under tight deadlines.</p>
+    </div>
+    <div class="title">
+      <h3>Audit & Alignment</h3>
+      <p>We conducted a full audit of existing Comparable screens and related modules to identify inconsistencies and redundancies.We discovered more than 20 unique table and input variations performing similar functions—a clear opportunity to standardize using Salt components.</p>
+    </div>
+    <div class="grid grid-3 tall">
+      <img src="/static/img/creval/thumbs/audit-1.png" alt="">
+      <img src="/static/img/creval/thumbs/audit-2.png" alt="">
+      <img src="/static/img/creval/thumbs/audit-3.png" alt="">
+    </div>
+  </section>
+  <section>
+    <style>
+      @scope {
+        img {
+          object-position: center !important;
+        }
+      }
+    </style>
+    <div class="title">
+      <h3>Content</h3>
+      <p>Collaborating with the content designer, we began work on the taxonomy. We merged and refined labels, added helper text and inline editing, and aligned tone and hierarchy to improve clarity. We also applied Salt accessibility guidelines throughout the comparison tables.</p>
+    </div>
+     <div class="grid grid-3" style="grid-template-columns: 2fr 1fr;">
+      <img style="aspect-ratio: 3.91 / 1;" src="/static/img/creval/thumbs/content-1.png" alt="">
+      <img src="/static/img/creval/thumbs/content-2.png" alt="">
+    </div>
+    <div class="grid grid-4">
+      <img src="/static/img/creval/thumbs/content-3.png" alt="">
+      <img src="/static/img/creval/thumbs/content-4.png" alt="">
+      <img src="/static/img/creval/thumbs/content-5.png" alt="">
+      <img src="/static/img/creval/thumbs/content-6.png" alt="">
+    </div>
+  </section>
+  <section>
+    <div class="title">
+      <h3>Research</h3>
+      <p>Partnering with the researcher, product owner, and business partners, we focused on the appraisal persona, whose primary task is creating comparables to evaluate property values by comparing them to similar properties (e.g., sale price, income, location, and type).</p>
+    </div>
+    <div class="">
+      <img class="fit no-border" src="/static/img/creval/big-thumbs/research.png" alt="">
+    </div>
+  </section>
+  <section>
+    <div class="title">
+      <h3>User Journey</h3>
+      <p>We began by mapping the user journey and conducting interviews with users in NY and CA to identify pain points that could be addressed, the findings included inefficient layouts, inconsistent input fields, and output and difficulty quickly scanning important values.</p>
+    </div>
+    <div class="">
+      <img class="fit" src="/static/img/creval/big-thumbs/user-journey.png" alt="">
+    </div>
+  </section>
+  <section>
+    <div class="title">
+      <h2>DESIGN SYSTEM</h2>
+      <p>Integrating the Salt Design System into a complex data workflow, the project not only enhanced usability but also laid a scalable foundation for the future product evolution. </p>
+    </div>
+    <div class="grid grid-3 bottom">
+      <img src="/static/img/creval/thumbs/ds-1.png" alt="">
+      <img src="/static/img/creval/thumbs/ds-2.png" alt="">
+      <img src="/static/img/creval/thumbs/ds-3.png" alt="">
+    </div>
+  </section>
+  <section>
+    <div class="">
+      <div class="flex">
+        <h4>Header</h4>
+        <img class="fit" src="/static/img/creval/big-thumbs/header.jpg" alt="">
+      </div>
+    </div>
+    <div class="grid grid-3" style="grid-template-columns: 2fr 1fr;">
+      <div>
+        <h4>Button</h4>
+        <img style="aspect-ratio: 3.91 / 1;" src="/static/img/creval/big-thumbs/button.png" alt="">
+      </div>
+      <div>
+        <h4>Dark Mode</h4>
+        <img src="/static/img/creval/thumbs/dark-mode.png" alt="">
+      </div>
+    </div>
+    <div class="">
+      <div class="flex">
+        <h4>Data Grid</h4>
+        <img class="fit no-border" src="/static/img/creval/big-thumbs/data-grid.png" alt="">
+      </div>
+    </div>
+    <div class="grid grid-3">
+      <div>
+        <h4>Dialog</h4>
+        <img src="/static/img/creval/thumbs/dialog.png" alt="">
+      </div>
+      <div>
+        <h4>Multiline</h4>
+        <img src="/static/img/creval/thumbs/multiline.png" alt="">
+      </div>
+      <div>
+        <h4>Multiselect</h4>
+        <img src="/static/img/creval/thumbs/multiselect.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="grid">
+      <div>
+        <h2>IA</h2>
+        <img src="/static/img/creval/thumbs/ia.png" alt="">
+      </div>
+      <div>
+        <h2>User Flow</h2>
+        <img src="/static/img/creval/thumbs/user-flow.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="title">
+      <h3>NEW DESIGN</h3>
+      <p>We streamlined the overall experience and clarified previously fragmented workflows. One key improvement focused on optimizing the search filters by grouping them into 13–15 distinct categories, which reduced excessive scrolling and made options easier to scan. These enhancements created a more intuitive and efficient experience, enabling appraisers to work faster and save time.</p>
+    </div>
+    <div class="grid">
+      <style>
+        @scope {
+          div:nth-child(odd) h4 {
+            color: var(--primary-color);
+          }
+        }
+      </style>
+      <div>
+        <h4>Search Filter - Legacy</h4>
+        <img src="/static/img/creval/thumbs/search-filter-old.png" alt="">
+      </div>
+      <div>
+        <h4>Search Filter - New</h4>
+        <img src="/static/img/creval/thumbs/search-filter-new.png" alt="">
+      </div>
+      <div>
+        <h4>Header - Legacy</h4>
+        <img src="/static/img/creval/thumbs/header-old.png" alt="">
+      </div>
+      <div>
+        <h4>Header - New</h4>
+        <img src="/static/img/creval/thumbs/header-new.png" alt="">
+      </div>
+      <div>
+        <h4>Photo - Legacy</h4>
+        <img src="/static/img/creval/thumbs/photo-old.png" alt="">
+      </div>
+      <div>
+        <h4>Upload - New</h4>
+        <img src="/static/img/creval/thumbs/upload-new.png" alt="">
+      </div>
+      <div>
+        <h4>Summary - Legacy</h4>
+        <img src="/static/img/creval/thumbs/summary-old.png" alt="">
+      </div>
+      <div>
+        <h4>Summary - New</h4>
+        <img src="/static/img/creval/thumbs/summary-new.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="title">
+      <h2>Additional Feature</h2>
+      <p>We created and propose a new feature section that simplify access to published comps. Previously, users had to search by comp number, which wasn’t intuitive. Now, they can easily access published comps in one place and search by date, author, or other criteria.</p>
+    </div>
+    <div class="grid">
+      <div>
+        <h4>Wireframe – Option1</h4>
+        <img class="fit" src="/static/img/creval/thumbs/wireframe-option-1.png" alt="">
+      </div>
+      <div>
+        <h4>Wireframe – Option2</h4>
+        <img class="fit" src="/static/img/creval/thumbs/wireframe-option-2.png" alt="">
+      </div>
+      <div>
+        <h4>Hi–Fi Draft</h4>
+        <img class="fit" src="/static/img/creval/thumbs/hi-fi-draft.png" alt="">
+      </div>
+      <div>
+        <h4>Hi–Fi Published</h4>
+        <img class="fit" src="/static/img/creval/thumbs/hi-fi-draft.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="title">
+      <h2>Outcome</h2>
+      <p>The redesigned Comparable Module delivered measurable improvements in usability, consistency, and workflow efficiency. Beyond the Comparables module, the initiative established a new comparison pattern to be adopted across the CREVAL platform, driving alignment, reducing design debt, and strengthening system-wide cohesion.</p>
+    </div>
+    <div class="grid grid-4">
+      <style>
+        @scope {
+          .circle {
+            background-color: #CDF4D3;
+            border: 4px solid #66D575;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            font-size: var(--font-size-large);
+            font-weight: bold;
+            line-height: normal;
+          }
+
+          div {
+
+          }
+
+          img {
+            pointer-events: none;
+          }
+
+          p {
+            text-align: center;
+            margin-top: 10px;
+          }
+        }
+      </style>
+      <div>
+        <img class="fit no-border" src="/static/img/creval/thumbs/25_.png" alt="">
+        <!-- <div class="circle">25%+<br />Improvement</div> -->
+        <p>Workflows efficiency</p>
+      </div>
+      <div>
+        <img class="fit no-border" src="/static/img/creval/thumbs/100_.png" alt="">
+        <!-- <div class="circle">100%<br />Adoption</div> -->
+        <p>Salt Design System </p>
+      </div>
+      <div>
+        <img class="fit no-border" src="/static/img/creval/thumbs/30_.png" alt="">
+        <!-- <div class="circle">30%<br />Reduction</div> -->
+        <p>Replaced 20+ custom UI </p>
+      </div>
+      <div>
+        <img class="fit no-border" src="/static/img/creval/thumbs/20_.png" alt="">
+        <!-- <div class="circle">20%<br />Clarity</div> -->
+        <p>Minimized errors</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="title">
+      <h2>Retrospective</h2>
+      <p>When redesigning a large and complex platform like CREVAL presented inevitable challenges. The project required collaboration across multiple disciplines—from design, research, and content to product and business teams—each with unique goals, timelines, and feedback processes. Balancing these moving parts while maintaining a cohesive vision, design consistency, and timely delivery became a key part of the journey.</p>
+    </div>
+    <div class="grid grid-3 bg-fill gradient">
+      <style>
+        @scope {
+          div {
+            padding-right: 60px;
+          }
+        }
+      </style>
+      <div><strong>Extended Research and User Journey Mapping</strong></div>
+      <div><strong>Accelerated Design and Delivery Timeline</strong></div>
+      <div><strong>Overlooked Features and Iterative Refinement</strong></div>
+    </div>
+  </section>
+  <section>
+    <div class="title">
+      <h2>Next Step</h2>
+      <p>After launch, we’ll collect user feedback to optimize workflows and further enhance the Comparables module for a smoother, more intuitive experience.</p>
+    </div>
+  </section>
+</div>
